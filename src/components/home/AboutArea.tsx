@@ -1,25 +1,24 @@
-
 import React from 'react'
 import Count from '../common/Count'
 
 const counter_data = [
   {
     id: 1,
-    title: 'Years Of Experience',
-    count: 8,
+    title: 'Anos de Experiência',
+    count: 4,
     cls: "plus",
   },
   {
     id: 2,
-    title: 'Completed Projects',
+    title: 'Artes Entregues',
     count: 1,
     cls: "k-plus",
   },
   {
     id: 3,
-    title: 'Client Satisfactions',
-    count: 90,
-    cls: "percent",
+    title: 'Marcas Desenvolvidas',
+    count: 10,
+    cls: "plus",
   },
 ]
 
@@ -30,13 +29,30 @@ export default function AboutArea() {
         <div className="container">
           <div className="row">
 
+            {/* TÍTULO LATERAL */}
             <div className="col-lg-3 col-sm-3">
-              <h2 className="about-pre-title">About Me</h2>
+              <h2 className="about-pre-title">Sobre</h2>
             </div>
+
+            {/* CONTEÚDO */}
             <div className="col-lg-9 col-sm-9">
               <div className="about-content-part wow fadeInUp delay-0-2s">
-                <p>I am Nino Walker, a seasoned UX designer with over 8 years of experience in crafting intuitive and engaging digital experiences. My journey began with a background in graphic design, where I discovered my passion for understanding user behavior and translating it into seamless interactions.</p>
+                <p>
+                  Oi, sou Gustavo Fisner, designer com mais de 4 anos de experiência
+                  atuando na criação de identidades visuais, projetos de branding
+                  e soluções gráficas estratégicas. Desenvolvo marcas que
+                  traduzem propósito, personalidade e posicionamento de forma
+                  consistente e memorável.
+                </p>
+
+                <p>
+                  Meu trabalho é focado em estética,
+                  coerência e significado, sempre alinhando criatividade e
+                  estratégia para gerar valor real para negócios e pessoas.
+                </p>
               </div>
+
+              {/* CONTADORES */}
               <div className="hero-counter-area d-flex justify-content-between wow fadeInUp delay-0-4s">
                 {counter_data.map((item, i) => (
                   <div key={i} className="counter-item counter-text-wrap">
@@ -45,13 +61,13 @@ export default function AboutArea() {
                     </span>
                     <span className="counter-title">{item.title}</span>
                   </div>
-                ))} 
+                ))}
               </div>
+
             </div>
           </div>
         </div>
       </section>
-
     </>
   )
 }

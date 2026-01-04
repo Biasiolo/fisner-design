@@ -40,9 +40,9 @@ Version      : 1.0
 
 :root {
     --main-color: #070707;
-    --heading-color: #fff;
+    --heading-color: #fff8e8;
     --primary-color: #aab72a;
-    --lighter-color: #f7f7f7;
+    --lighter-color: #fff8e8;
     --subtitle-color: #f7f7f7;
     --black-color: #17151c;
     --border-color: rgba(255, 255, 255, 0.0784313725);
@@ -3521,10 +3521,17 @@ ul.blog_pagination li a:hover {
     flex-wrap: wrap;
     gap: 80px;
     gap: 5rem;
+    background-color: #fff8e8;
 }
 
 .scroller__inner img {
-    margin-right: 30px;
+  height: 60px;          /* ALTURA PADRÃO */
+  width: auto;           /* mantém proporção */
+  max-width: 180px;      /* evita logos muito largos */
+  object-fit: contain;
+  flex-shrink: 0;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
 }
 
 .scroller[data-animated="true"] {

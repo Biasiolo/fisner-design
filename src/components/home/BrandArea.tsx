@@ -30,16 +30,18 @@ export default function BrandArea() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h2>Company I Worked With</h2>
+              <h2>Marcas que confiam</h2>
               <div className="company-list">
                 <div className="scroller" data-direction="left" data-speed="slow">
                   <div className="scroller__inner">
-                    <img src="assets/images/client-logos/partner1.png" alt="Company" />
-                    <img src="assets/images/client-logos/partner2.png" alt="Company" />
-                    <img src="assets/images/client-logos/partner3.png" alt="Company" />
-                    <img src="assets/images/client-logos/partner4.png" alt="Company" />
-                    <img src="assets/images/client-logos/partner5.png" alt="Company" />
-                    <img src="assets/images/client-logos/partner1.png" alt="Company" />
+
+                    <img src="assets/images/final/marcas/logo2.png" alt="Company" />
+                    <img src="assets/images/final/marcas/logo3.png" alt="Company" />
+                    <img src="assets/images/final/marcas/logo4.png" alt="Company" />
+                    <img src="assets/images/final/marcas/logo5.png" alt="Company" />
+                    <img src="assets/images/final/marcas/logo6.png" alt="Company" />
+                    <img src="assets/images/final/marcas/logo7.png" alt="Company" />
+                    <img src="assets/images/final/marcas/logo1.png" alt="Company" />
                   </div>
                 </div>
               </div>
