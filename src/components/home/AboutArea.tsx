@@ -30,13 +30,13 @@ export default function AboutArea() {
           <div className="row">
 
             {/* TÍTULO LATERAL */}
-            <div className="col-lg-3 col-sm-3">
-              <h2 className="about-pre-title">Sobre</h2>
+            <div className="col-lg-3 col-sm-3 ">
+              <h2 className="about-pre-title ">Sobre</h2>
             </div>
 
             {/* CONTEÚDO */}
             <div className="col-lg-9 col-sm-9">
-              <div className="about-content-part wow fadeInUp delay-0-2s">
+              <div className="about-content-part wow px-3 fadeInUp delay-0-2s">
                 <p>
                   Oi, sou Gustavo Fisner, designer com mais de 5 anos de experiência
                   atuando na criação de identidades visuais, projetos de branding

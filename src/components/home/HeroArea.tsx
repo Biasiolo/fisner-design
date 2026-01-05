@@ -59,7 +59,7 @@ export default function HeroArea() {
                 />
               </div>
 
-              <p className="hero-description mb-4">
+              <p className="hero-description text-center  pb-2 ">
                 Criações que traduzem propósito, personalidade
                 e estratégia, desenvolvendo marcas, campanhas e projetos com estética
                 , coerência e significado.
@@ -67,7 +67,7 @@ export default function HeroArea() {
 
               <a
                 href="#contato"
-                className="theme-btn hero-btn d-inline-flex justify-content-center align-items-center w-100"
+                className="theme-btn hero-btn d-inline-flex justify-content-center align-items-center w-100 mb-4"
               >
                 Entre em contato
               </a>
