@@ -2611,7 +2611,7 @@ p.copy-right-text {
 
 .footer-top h2 {
     color: var(--main-color);
-    font-size: 180px;
+    font-size: 80px;
     line-height: 1em;
     font-weight: 700;
     text-transform: uppercase;

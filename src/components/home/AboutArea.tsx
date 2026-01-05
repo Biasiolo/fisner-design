@@ -5,19 +5,19 @@ const counter_data = [
   {
     id: 1,
     title: 'Anos de Experiência',
-    count: 4,
+    count: 5,
     cls: "plus",
   },
   {
     id: 2,
     title: 'Artes Entregues',
-    count: 1,
-    cls: "k-plus",
+    count: 1000,
+    cls: "plus",
   },
   {
     id: 3,
     title: 'Marcas Desenvolvidas',
-    count: 10,
+    count: 20,
     cls: "plus",
   },
 ]
@@ -38,7 +38,7 @@ export default function AboutArea() {
             <div className="col-lg-9 col-sm-9">
               <div className="about-content-part wow fadeInUp delay-0-2s">
                 <p>
-                  Oi, sou Gustavo Fisner, designer com mais de 4 anos de experiência
+                  Oi, sou Gustavo Fisner, designer com mais de 5 anos de experiência
                   atuando na criação de identidades visuais, projetos de branding
                   e soluções gráficas estratégicas. Desenvolvo marcas que
                   traduzem propósito, personalidade e posicionamento de forma
@@ -46,7 +46,7 @@ export default function AboutArea() {
                 </p>
 
                 <p>
-                  Meu trabalho é focado em estética,
+                  Meu trabalho é baseado em estética,
                   coerência e significado, sempre alinhando criatividade e
                   estratégia para gerar valor real para negócios e pessoas.
                 </p>
