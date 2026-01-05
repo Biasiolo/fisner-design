@@ -1,4 +1,3 @@
-
 import React from 'react'
 
 export default function ServiceArea() {
@@ -9,48 +8,66 @@ export default function ServiceArea() {
           <div className="row">
             <div className="col-xl-12 col-lg-12">
               <div className="section-title section-black-title wow fadeInUp delay-0-2s">
-                <h2>Services</h2>
+                <h2>Serviços</h2>
               </div>
             </div>
           </div>
+
           <div className="row">
 
-            <div className="col-lg-8 col-md-7">
+            {/* Branding */}
+            <div className="col-lg-7 col-md-7">
               <div className="service-item wow fadeInUp delay-0-2s">
                 <i className="ri-arrow-right-up-line"></i>
                 <h5>01</h5>
-                <h4>Brand Identity Design</h4>
-                <p>Blend of strategic thinking and creative flair to craft a digital identity that resonates and captivates. kits you need to create a true website within minutes.</p>
+                <h4>Branding & Posicionamento</h4>
+                <p>
+                  Criação e desenvolvimento de marcas estratégicas, alinhando
+                  propósito, personalidade e posicionamento para construir
+                  identidades fortes, coerentes e memoráveis.
+                </p>
               </div>
             </div>
 
-
-            <div className="col-lg-4 col-md-5">
+            {/* Identidade Visual */}
+            <div className="col-lg-5 col-md-5">
               <div className="service-item wow fadeInUp delay-0-4s">
                 <i className="ri-arrow-right-up-line"></i>
                 <h5>02</h5>
-                <h4>Visual Design</h4>
-                <p>Blend of artistic intuition with strategic insight to craft a visual identity.</p>
+                <h4>Identidade Visual</h4>
+                <p>
+                  Sistemas visuais completos, incluindo logotipo,
+                  tipografia, cores e aplicações, com consistência em 
+                  pontos de contato da marca.
+                </p>
               </div>
             </div>
 
-
-            <div className="col-lg-4 col-md-5">
+            {/* Artes para Redes Sociais */}
+            <div className="col-lg-6 col-md-5">
               <div className="service-item wow fadeInUp delay-0-6s">
                 <i className="ri-arrow-right-up-line"></i>
                 <h5>03</h5>
-                <h4>UX Research</h4>
-                <p>Blend of functionality with aesthetics to create delightful experience.</p>
+                <h4>Artes para Postagens</h4>
+                <p>
+                  Criação de artes estratégicas para redes sociais, focadas em
+                  comunicação visual clara, estética forte e alinhamento com a
+                  identidade da marca.
+                </p>
               </div>
             </div>
 
-
-            <div className="col-lg-8 col-md-7">
+            {/* Banners e Materiais Gráficos */}
+            <div className="col-lg-6 col-md-7">
               <div className="service-item wow fadeInUp delay-0-8s">
                 <i className="ri-arrow-right-up-line"></i>
                 <h5>04</h5>
-                <h4>Art Direction</h4>
-                <p>Blend of strategic thinking and artistic finesse to craft a visual identity that goes beyond aesthetics.</p>
+                <h4>Banners & Materiais Gráficos</h4>
+                <p>
+                  Desenvolvimento de banners, peças promocionais e materiais gráficos
+                  digitais ou impressos, com impacto visual, clareza e estratégia
+                  de comunicação.
+                </p>
               </div>
             </div>
 
