@@ -26,15 +26,15 @@ export default function HeroArea() {
   return (
     <section id="home" className="main-hero-area hero-fisner">
       <div className="container align-items-center pt-4">
-        <div className="row align-items-center mt-3">
+        <div className="row  mt-3">
 
           {/* FOTO */}
           <div className="col-lg-6">
-            <div className="hero-image wow fadeInLeft delay-0-2s px-2">
+            <div className="hero-image  wow fadeInDown delay-0-2s px-2">
               <img
-                src="/assets/images/final/IMG_6551-removebg-preview.png"
+                src="/assets/images/final/hero1.png"
                 alt="Gustavo Fisner"
-                className="img-fluid hero-photo"
+                className=" hero-photo"
               />
             </div>
           </div>
@@ -60,9 +60,9 @@ export default function HeroArea() {
               </div>
 
               <p className="hero-description mb-4">
-                Criação de identidades visuais que traduzem propósito, personalidade
+                Criações que traduzem propósito, personalidade
                 e estratégia, desenvolvendo marcas, campanhas e projetos com estética
-                forte, coerência e significado.
+                , coerência e significado.
               </p>
 
               <a
