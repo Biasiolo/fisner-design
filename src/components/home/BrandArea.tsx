@@ -41,6 +41,7 @@ export default function BrandArea() {
                     <img src="assets/images/final/marcas/logo5.png" alt="Company" />
                     <img src="assets/images/final/marcas/logo6.png" alt="Company" />
                     <img src="assets/images/final/marcas/logo7.png" alt="Company" />
+                    <img src="assets/images/final/marcas/logo8.png" alt="Company" />
                     <img src="assets/images/final/marcas/logo1.png" alt="Company" />
                   </div>
                 </div>

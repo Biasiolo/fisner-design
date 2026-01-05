@@ -1,12 +1,34 @@
-import React from 'react'
+"use client"
+
+import { useEffect, useState } from 'react'
 
 export default function HeroArea() {
+  const [scale, setScale] = useState(1)
+
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY
+
+      // controle da escala
+      const newScale = Math.max(0.8, 1 - scrollY * 0.0055)
+
+      setScale(newScale)
+
+
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <section id="home" className="main-hero-area hero-fisner">
       <div className="container align-items-center pt-4">
         <div className="row align-items-center mt-3">
 
-          {/* COLUNA ESQUERDA – FOTO */}
+          {/* FOTO */}
           <div className="col-lg-6">
             <div className="hero-image wow fadeInLeft delay-0-2s px-2">
               <img
@@ -17,31 +39,32 @@ export default function HeroArea() {
             </div>
           </div>
 
-          {/* COLUNA DIREITA – LOGO + TEXTO */}
+          {/* CONTEÚDO */}
           <div className="col-lg-6">
             <div className="hero-content wow fadeInUp delay-0-2s
-                  d-flex flex-column
-                  align-items-center align-items-lg-start
-                  text-center text-lg-start">
+              d-flex flex-column
+              align-items-center align-items-lg-start
+              text-center text-lg-start">
 
-              {/* LOGO */}
+              {/* LOGO COM ZOOM OUT */}
               <div className="w-100 d-flex justify-content-center my-4">
                 <img
                   src="/assets/images/final/LOGO-VERDE.png"
                   alt="Gustavo Fisner Design"
-                  className="img-fluid hero-logo"
+                  className="img-fluid hero-logo hero-logo-zoom"
+                  style={{
+                    transform: `scale(${scale})`,
+                    transition: 'transform 0.2s linear',
+                  }}
                 />
               </div>
 
-              {/* TEXTO */}
               <p className="hero-description mb-4">
                 Criação de identidades visuais que traduzem propósito, personalidade
                 e estratégia, desenvolvendo marcas, campanhas e projetos com estética
-                forte, coerência e significado, pensados para se conectar de forma real
-                com as pessoas.
+                forte, coerência e significado.
               </p>
 
-              {/* BOTÃO */}
               <a
                 href="#contato"
                 className="theme-btn hero-btn d-inline-flex justify-content-center align-items-center w-100"

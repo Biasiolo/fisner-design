@@ -3,9 +3,9 @@ import Image, { StaticImageData } from 'next/image';
 import React, { useState } from 'react'
 import ImagePopup from '@/modals/ImagePopup';
 
-import portfolio_img_1 from "@/assets/images/projects/work1.jpg";
+import portfolio_img_1 from "@/assets/images/final/brand1.png";
 import portfolio_img_2 from "@/assets/images/projects/work2.jpg";
-import portfolio_img_3 from "@/assets/images/projects/work3.jpg";
+import portfolio_img_3 from "@/assets/images/final/brand1.png";
 import portfolio_img_4 from "@/assets/images/projects/work4.jpg";
 import portfolio_img_5 from "@/assets/images/projects/work5.jpg";
 
@@ -73,12 +73,12 @@ export default function PortfolioArea() {
   return (
     <>
 
-      <div className="projects-area" id="portfolio">
+      <div className="projects-area px-4" id="portfolio">
         <div className="custom-icon">
           <img src="assets/images/custom/work-scribble.svg" alt="custom" />
         </div>
         <div className="container-fluid">
-          <div className="row g-4 portfolio-grid">
+          <div className="row g-4 portfolio-grid ">
             {portfolio_data.map((item, i) => (
               <div key={i} className={`col-md-6 col-xl-${item.col} portfolio-item category-1`}>
                 <a
