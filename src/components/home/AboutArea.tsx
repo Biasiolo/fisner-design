@@ -11,7 +11,7 @@ const counter_data = [
   {
     id: 2,
     title: 'Artes Entregues',
-    count: 1000,
+    count: 3125,
     cls: "plus",
   },
   {
