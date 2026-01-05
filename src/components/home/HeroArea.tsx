@@ -12,7 +12,7 @@ export default function HeroArea() {
       const scrollY = window.scrollY
 
       // controle da escala
-      const newScale = Math.max(0.05, 1 - scrollY * 0.0050)
+      const newScale = Math.max(0.5, 1 - scrollY * 0.0050)
 
       setScale(newScale)
 
@@ -54,7 +54,7 @@ export default function HeroArea() {
                   className="img-fluid hero-logo hero-logo-zoom"
                   style={{
                     transform: `scale(${scale})`,
-                    transition: 'transform 0.3s linear',
+                    transition: 'transform 0.5s linear',
                   }}
                 />
               </div>

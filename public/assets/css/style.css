@@ -3496,13 +3496,14 @@ ul.blog_pagination li a:hover {
 
 .company-design-area {
     padding: 100px 0px;
+    background-color:#f8f8f8;
 }
 
 .company-design-area h2 {
     text-transform: uppercase;
     font-size: 16px;
     text-align: center;
-    color: #fff8e8;
+    color: var(--black-color);
     margin-bottom: 30px;
     letter-spacing: 5px;
     font-weight: 500;
@@ -3518,7 +3519,7 @@ ul.blog_pagination li a:hover {
     flex-wrap: wrap;
     gap: 80px;
     gap: 5rem;
-    background-color: #fff8e8;
+    background-color: #f8f8f8;
 }
 
 .scroller__inner img {

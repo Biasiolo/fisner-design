@@ -19,7 +19,7 @@ export default function HeaderOne() {
               <div className="row align-items-center">
                 <div className="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">
                   <div className="logo-area">
-                    <div className="logo">
+                    <div className="logo wow fadeInUp delay-0-2s">
                       <Link href="/"><img src="assets/images/final/LOGO-AZUL-PRETO.png" alt="" /></Link>
                     </div>
                   </div>
