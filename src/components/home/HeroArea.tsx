@@ -29,7 +29,7 @@ export default function HeroArea() {
         <div className="row  mt-3">
 
           {/* FOTO */}
-          <div className="col-lg-6">
+          <div className="col-lg-7">
             <div className="hero-image  wow fadeInDown delay-0-2s px-2">
               <img
                 src="/assets/images/final/hero1.png"
@@ -40,7 +40,7 @@ export default function HeroArea() {
           </div>
 
           {/* CONTEÚDO */}
-          <div className="col-lg-6">
+          <div className="col-lg-5">
             <div className="hero-content wow fadeInUp delay-0-2s
               d-flex flex-column
               align-items-center align-items-lg-start
