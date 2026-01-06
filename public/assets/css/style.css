@@ -234,6 +234,34 @@ mark {
   border-radius: 0;
 }
 
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 570px; /* Defina a altura desejada */
+    overflow: hidden;
+  }
+
+  .hero-image-container .hero-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém proporção e preenche o espaço */
+    transition: transform 0.3s ease;
+  }
+
+
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .hero-image-container {
+      height: 400px;
+    }
+  }
+
+
+
 @media (min-width: 992px) {
   .main-hero-area.hero-fisner .hero-photo {
     max-height: 680px;
