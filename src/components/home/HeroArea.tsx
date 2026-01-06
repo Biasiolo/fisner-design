@@ -12,7 +12,7 @@ export default function HeroArea() {
       const scrollY = window.scrollY
 
       // controle da escala
-      const newScale = Math.max(0.5, 1 - scrollY * 0.0050)
+      const newScale = Math.max(0.5, 1 - scrollY * 0.0020)
 
       setScale(newScale)
 

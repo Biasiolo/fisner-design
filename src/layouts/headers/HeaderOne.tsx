@@ -1,5 +1,5 @@
 "use client"
-import Link from "next/link";
+
 import UseSticky from "@/hooks/UseSticky";
 import NavMenu from "./NavMenu"; 
 import { useState } from "react";
@@ -20,7 +20,7 @@ export default function HeaderOne() {
                 <div className="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">
                   <div className="logo-area">
                     <div className="logo wow fadeInUp delay-0-2s">
-                      <Link href="/"><img src="assets/images/final/LOGO-AZUL-PRETO.png" alt="" /></Link>
+                      <img src="assets/images/final/LOGO-AZUL-PRETO.png" alt="" />
                     </div>
                   </div>
                 </div>

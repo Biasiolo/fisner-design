@@ -27,6 +27,16 @@ export default function AboutArea() {
     <>
       <section id="about" className="about-area">
         <div className="container">
+                   <div className="row">
+  <div className="col-12 d-flex justify-content-center">
+    <div className="testimonial-avatars wow fadeInDown delay-0-2s">
+      
+      <img src="/assets/images/final/dep2.png" alt="Gustavo Fisner" />
+      <img src="/assets/images/final/dep1.png" alt="Gustavo Fisner" />
+      <img src="/assets/images/final/dep3.png" alt="Gustavo Fisner" />
+    </div>
+  </div>
+</div>
           <div className="row">
 
             {/* TÍTULO LATERAL */}

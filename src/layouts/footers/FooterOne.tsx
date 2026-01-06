@@ -8,7 +8,7 @@ export default function FooterOne() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="footer-top">
+              <div className="footer-top text-center">
                 <p> Tem um projeto?</p>
                 <h2><a href="mailto:hello@websitename.com">Vamos trabalhar juntos!</a></h2>
               </div>

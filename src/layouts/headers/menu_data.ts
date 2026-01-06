@@ -8,47 +8,49 @@ interface DataType {
 		title: string;
 	}[];
 }
+
 // menu data
 const menu_data: DataType[] = [
 	{
 		id: 1,
 		title: "Início",
-		link: "/",
+		link: "#home", // Alterado para âncora
 		has_dropdown: false,
 	},
 	{
 		id: 2,
 		title: "Sobre",
-		link: "/about",
+		link: "#about", // Já estava correto
 		has_dropdown: false,
 	},
 	{
 		id: 3,
 		title: "Serviços",
-		link: "/service",
+		link: "#services", // Alterado para âncora
 		has_dropdown: false,
 	},
 	{
 		id: 4,
 		title: "Projetos",
-		link: "#",
+		link: "#projects", // Alterado para âncora
 		has_dropdown: true,
 		sub_menus: [
-			{ link: "/projects", title: "Projects List" },
-			{ link: "/single-project", title: "Single Portfolio" },
+			{ link: "#projects-list", title: "Projects List" },
+			{ link: "#single-project", title: "Single Portfolio" },
 		],
 	},
 	{
 		id: 5,
 		title: "Blog",
-		link: "/blog",
+		link: "#blog", // Alterado para âncora
 		has_dropdown: false,
 	},
 	{
 		id: 6,
 		title: "Contato",
-		link: "/contact",
+		link: "#contact", // Alterado para âncora
 		has_dropdown: false,
 	},
 ];
+
 export default menu_data;

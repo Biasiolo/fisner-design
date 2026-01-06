@@ -5,6 +5,7 @@ export default function ServiceArea() {
     <>
       <section id="services" className="services-area">
         <div className="container">
+
           <div className="row">
             <div className="col-xl-12 col-lg-12">
               <div className="section-title section-black-title wow fadeInUp delay-0-2s">

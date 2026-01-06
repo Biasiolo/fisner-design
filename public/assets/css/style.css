@@ -2622,9 +2622,9 @@ p.copy-right-text {
     text-align-last: right;
 }
 
-.footer-top h2 {
-    color: var(--main-color);
-    font-size: 80px;
+.footer-top h2 a {
+
+    font-size: 4rem;
     line-height: 1em;
     font-weight: 700;
     text-transform: uppercase;
@@ -2640,6 +2640,24 @@ padding-top: 100px;
     color: var(--main-color);
     font-size: 20px;
     text-align: center;
+}
+
+.main-menu button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.mean-nav button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 
 /*
@@ -3604,4 +3622,30 @@ ul.blog_pagination li a:hover {
         -webkit-transform: translate(calc(-50% - 0.5rem));
         transform: translate(calc(-50% - 0.5rem));
     }
+}
+
+.testimonial-avatars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+.testimonial-avatars img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f8f8f8;
+  margin-left: -14px; /* 🔥 sobreposição */
+  background-color: #f8f8f8;
+}
+
+.testimonial-avatars img:first-child {
+  margin-left: 0;
+}
+@media (min-width: 992px) {
+  .testimonial-avatars img {
+    width: 140px;
+    height: 140px;
+  }
 }
