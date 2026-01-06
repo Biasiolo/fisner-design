@@ -76,7 +76,7 @@ export default function PortfolioArea() {
       <section id='destaques'>
         <div className="projects-area px-4" id="portfolio">
         <div className="custom-icon">
-          <img src="assets/images/custom/work-scribble.svg" alt="custom" />
+
         </div>
         <div className="container-fluid">
           <div className="row g-4 portfolio-grid ">

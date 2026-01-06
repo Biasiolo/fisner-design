@@ -1,19 +1,74 @@
- 
-import React from 'react'
-
-import type { Metadata } from 'next'  
+import type { Metadata } from 'next'
 import Home from '@/components/home'
 import Wrapper from '@/layouts/Wrapper'
+
 export const metadata: Metadata = {
-  title: 'Gustavo Fisner Design',
-  description: 'Gustavo Fisner Design - Personal Portfolio Next JS Template fresh and clean Design. You can use this portfolio template for: agency, personal portfolio, architect agency, photography studios, sound and music, musician, painter portfolio, artworks, art, artist portfolio, web design works, illustrators, trainer, projects, freelance designer. Just take the best Template of your choice, change the text, add your images and done! we have a strong support team which 24/7 days available to support you.',
+  title: 'Gustavo Fisner | Designer Gráfico, Branding & UI/UX',
+  description:
+    'Gustavo Fisner é designer especializado em branding, identidade visual e UI/UX design. Criação de marcas estratégicas, interfaces intuitivas e projetos visuais com foco em resultado. São José dos Campos – SP.',
+
+  keywords: [
+    'Gustavo Fisner',
+    'Designer Gráfico',
+    'Branding',
+    'Identidade Visual',
+    'UI UX Design',
+    'Designer Freelancer',
+    'Design de Marcas',
+    'Portfólio de Design',
+    'Designer São José dos Campos',
+  ],
+
+  authors: [{ name: 'Gustavo Fisner' }],
+  creator: 'Gustavo Fisner',
+  publisher: 'Gustavo Fisner',
+
+  openGraph: {
+    title: 'Gustavo Fisner | Branding, Identidade Visual & UI/UX',
+    description:
+      'Portfólio de Gustavo Fisner — Designer especializado em branding, identidade visual e UI/UX. Projetos estratégicos com estética, clareza e propósito.',
+    url: 'https://fisner-design.vercel.app', // 🔴 troque pelo domínio real
+    siteName: 'Gustavo Fisner Design',
+    images: [
+      {
+        url: '/LOGO-VERDE.png', // 🔴 imagem dentro de /public
+        width: 1200,
+        height: 630,
+        alt: 'Gustavo Fisner — Designer Gráfico e UI/UX',
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gustavo Fisner | Designer & Branding',
+    description:
+      'Designer especializado em branding, identidade visual e UI/UX. Veja projetos e entre em contato.',
+    images: ['/LOGO-VERDE.png'],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 }
 
-
-export default function index() {
+export default function Page() {
   return (
     <Wrapper>
-     <Home /> 
+      <Home />
     </Wrapper>
   )
 }
