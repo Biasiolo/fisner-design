@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 
 export default function HeroArea() {
   const [scale, setScale] = useState(1)
+  const [hovered, setHovered] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +25,7 @@ export default function HeroArea() {
           {/* CONTEÚDO */}
           <div className="col-lg-5 order-1 order-lg-2">
             <div
-              className="hero-content wow fadeInUp delay-0-2s
+              className="hero-content wow fadeInDown delay-0-2s
               d-flex flex-column
               align-items-center align-items-lg-start
               text-center text-lg-start"
@@ -61,11 +62,19 @@ export default function HeroArea() {
 
           {/* FOTO */}
           <div className="col-lg-7 order-2 order-lg-1">
-            <div className="hero-image wow fadeInDown delay-0-2s px-2">
+            <div
+              className="hero-image px-2  wow fadeInUp delay-0-2s"
+              onMouseEnter={() => setHovered(true)}
+              onMouseLeave={() => setHovered(false)}
+            >
               <img
-                src="/assets/images/final/hero1.png"
+                src={
+                  hovered
+                    ? "/assets/images/final/hero2.png"
+                    : "/assets/images/final/hero1.png"
+                }
                 alt="Gustavo Fisner"
-                className="img-fluid hero-photo"
+                className="img-fluid hero-photo hero-photo-swap"
               />
             </div>
           </div>
