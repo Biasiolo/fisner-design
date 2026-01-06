@@ -1588,6 +1588,7 @@ html {
     border: 1px solid rgba(0, 0, 0, 0.05);
     padding: 10px 14px;
     border-radius: 3pz;
+    color: var(--main-color);
 }
 
 .about-image-part .dot-shape {
@@ -2660,7 +2661,7 @@ p.copy-right-text {
 }
 
 .footer-top{
-padding-top: 100px;
+padding-top: 40px;
  padding-bottom: 100px;
 }
 .footer-top p{
@@ -3060,9 +3061,9 @@ body.loaded {
 .blog-post-box .blog-post-img:hover img {
     -webkit-transform: scale(1.04);
     transform: scale(1.04);
-    -webkit-filter: blur(1.5px);
-    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="1.5" /></filter></svg>#filter');
-    filter: blur(1.5px)
+
+    
+
 }
 
 .blog-post-caption {

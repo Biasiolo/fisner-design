@@ -50,11 +50,14 @@ export default function HeroArea() {
               </p>
 
               <a
-                href="#contato"
+                href="https://wa.me/5511986192043?text=Olá%20Gustavo!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="theme-btn hero-btn d-inline-flex justify-content-center align-items-center w-100 mb-4"
               >
                 Entre em contato
               </a>
+
 
             </div>
           </div>
