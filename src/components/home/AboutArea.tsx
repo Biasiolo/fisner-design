@@ -25,11 +25,11 @@ const counter_data = [
 export default function AboutArea() {
   return (
     <>
-      <section id="about" className="about-area">
-        <div className="container">
+      <section id="about" className="about-area pt-3">
+        <div className="container pt-4 mt-4">
                    <div className="row">
-  <div className="col-12 d-flex justify-content-center">
-    <div className="testimonial-avatars wow fadeInDown delay-0-2s">
+  <div className="col-12 d-flex justify-content-center pb-3">
+    <div className="testimonial-avatars wow fadeInDown delay-0-2s mb-4">
       
       <img src="/assets/images/final/dep2.png" alt="Gustavo Fisner" />
       <img src="/assets/images/final/dep1.png" alt="Gustavo Fisner" />

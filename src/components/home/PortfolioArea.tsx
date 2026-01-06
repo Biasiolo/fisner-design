@@ -73,7 +73,8 @@ export default function PortfolioArea() {
   return (
     <>
 
-      <div className="projects-area px-4" id="portfolio">
+      <section id='destaques'>
+        <div className="projects-area px-4" id="portfolio">
         <div className="custom-icon">
           <img src="assets/images/custom/work-scribble.svg" alt="custom" />
         </div>
@@ -108,6 +109,7 @@ export default function PortfolioArea() {
         />
       )}
       {/* image light box end */}
+      </section>
     </>
   )
 }

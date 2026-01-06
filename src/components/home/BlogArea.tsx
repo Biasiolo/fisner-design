@@ -4,12 +4,12 @@ import React from 'react'
 export default function BlogArea() {
   return (
     <>
-      <section className="blog-area">
+      <section id='projetos' className="blog-area">
         <div className="container">
           <div className="row">
             <div className="col-xl-12 col-lg-12">
               <div className="section-title wow fadeInUp delay-0-2s">
-                <h2>Stories</h2>
+                <h2>Desenvolvimento de Marcas</h2>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@ export default function BlogArea() {
               <div className="blog-post-caption">
                 <h3>Posted on Aug 28</h3>
                 <h2><a className="link-decoration" href="#">Create a Landing Page That Performs Great</a></h2>
-                <a className="theme-btn theme-btn-two" href="#">Read more <i className="ri-arrow-right-line"></i></a>
+                <a className="theme-btn theme-btn-two" href="#">Abrir PDF <i className="ri-arrow-right-line"></i></a>
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function BlogArea() {
               <div className="blog-post-caption">
                 <h3>Posted on Aug 28</h3>
                 <h2><a className="link-decoration" href="#">Starting and Growing a Career in Web Design</a></h2>
-                <a className="theme-btn theme-btn-two" href="#">Read more <i className="ri-arrow-right-line"></i></a>
+                <a className="theme-btn theme-btn-two" href="#">Abrir PDF <i className="ri-arrow-right-line"></i></a>
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function BlogArea() {
               <div className="blog-post-caption">
                 <h3>Posted on Aug 28</h3>
                 <h2><a className="link-decoration" href="#">How Can Designers Prepare for the Future?</a></h2>
-                <a className="theme-btn theme-btn-two" href="#">Read more <i className="ri-arrow-right-line"></i></a>
+                <a className="theme-btn theme-btn-two" href="#">Abrir PDF <i className="ri-arrow-right-line"></i></a>
               </div>
             </div>
           </div>

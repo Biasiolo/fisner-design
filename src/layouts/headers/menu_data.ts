@@ -31,18 +31,15 @@ const menu_data: DataType[] = [
 	},
 	{
 		id: 4,
-		title: "Projetos",
-		link: "#projects", // Alterado para âncora
-		has_dropdown: true,
-		sub_menus: [
-			{ link: "#projects-list", title: "Projects List" },
-			{ link: "#single-project", title: "Single Portfolio" },
-		],
+		title: "Destaques",
+		link: "#destaques", // Alterado para âncora
+		has_dropdown: false,
+
 	},
 	{
 		id: 5,
-		title: "Blog",
-		link: "#blog", // Alterado para âncora
+		title: "Projetos",
+		link: "#projetos", // Alterado para âncora
 		has_dropdown: false,
 	},
 	{
