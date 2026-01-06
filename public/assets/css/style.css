@@ -3088,6 +3088,13 @@ body.loaded {
     font-family: var(--text-font);
 }
 
+.blog-post-category h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #242424;
+    font-family: var(--text-font);
+    align-items: center; 
+}
 
 .blog-category {
     padding: 80px 0px;
