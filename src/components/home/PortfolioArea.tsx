@@ -3,11 +3,11 @@ import Image, { StaticImageData } from 'next/image';
 import React, { useState } from 'react'
 import ImagePopup from '@/modals/ImagePopup';
 
-import portfolio_img_1 from "@/assets/images/final/brand1.png";
-import portfolio_img_2 from "@/assets/images/projects/work2.jpg";
-import portfolio_img_3 from "@/assets/images/final/brand1.png";
-import portfolio_img_4 from "@/assets/images/projects/work4.jpg";
-import portfolio_img_5 from "@/assets/images/projects/work5.jpg";
+import portfolio_img_1 from "@/assets/images/final/dtk1.png";
+import portfolio_img_2 from "@/assets/images/final/dtk2.png";
+import portfolio_img_3 from "@/assets/images/final/dtk3.png";
+import portfolio_img_4 from "@/assets/images/final/dtk4.png";
+import portfolio_img_5 from "@/assets/images/final/dtk5.png";
 
 interface DataType {
   id: number;
@@ -22,35 +22,35 @@ const portfolio_data:DataType[] = [
     id: 1,
     col: "6",
     image: portfolio_img_1,
-    title: "Glasses of Cocktail",
+    title: "Club Essenza Wine & Co.",
     category: "Branding",
   },
   {
     id: 2,
     col: "6",
     image: portfolio_img_2,
-    title: "A Branch with Flowers",
-    category: "Mockup",
+    title: "Navah Assessoria & Negócios",
+    category: "Branding",
   },
   {
     id: 3,
     col: "4",
     image: portfolio_img_3,
-    title: "Orange Rose Flower",
-    category: "Video",
+    title: "Traluz - Energia Solar",
+    category: "Identidade Visual",
   },
   {
     id: 4,
     col: "4",
     image: portfolio_img_4,
-    title: "Green Plant on a Desk",
-    category: "Branding",
+    title: "Tour Crescimento Empresarial Paulo Vieira",
+    category: "Material Gráfico",
   },
   {
     id: 5,
     col: "4",
     image: portfolio_img_5,
-    title: "Orange Rose Flower",
+    title: "Vertta Odontologia",
     category: "Mockup",
   },
 ];
