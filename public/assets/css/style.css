@@ -311,8 +311,10 @@ mark {
 /* TEXTO */
 .main-hero-area.hero-fisner .hero-description {
     color: #fff8e8;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 1.7;
+    opacity: 0.8;
 
 }
 
@@ -325,6 +327,7 @@ mark {
     font-weight: 600;
     border: 1px solid #aab72a;
     transition: all 0.3s ease;
+    font-size: 18px;
 }
 
 .main-hero-area.hero-fisner .hero-btn:hover {
@@ -2591,6 +2594,7 @@ ul.extra-skills li i {
 
 .contact-content-part {
     padding: 50px 30px 20px 40px;
+    height: 100%;
     border-radius: 10px;
     border: 1px solid var(--border-color);
     background: var(--lighter-color);
@@ -2618,6 +2622,7 @@ ul.extra-skills li i {
     border-radius: 14px;
     background: var(--lighter-color);
     border: 1px solid var(--border-color);
+    height: 100%;
 }
 
 
@@ -2668,7 +2673,7 @@ ul.extra-skills li i {
 */
 .main-footer {
     background: var(--main-color);
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 
@@ -2714,7 +2719,7 @@ p.copy-right-text {
 }
 
 .footer-top {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 80px;
 }
 

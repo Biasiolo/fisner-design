@@ -50,7 +50,7 @@ export default function ContactArea() {
         <div className="row">
 
           {/* INFORMAÇÕES */}
-          <div className="col-lg-4">
+          <div className="col-lg-4 ">
             <div className="contact-content-part wow fadeInUp delay-0-2s">
 
               <div className="single-contact">
