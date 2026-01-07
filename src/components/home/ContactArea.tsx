@@ -82,7 +82,7 @@ export default function ContactArea() {
                 <div className="about-social">
                   <ul>
                     <li>
-                      <a target="_blank" href="https://www.instagram.com/gustavo_fisner">
+                      <a target="_blank" href="https://www.instagram.com/gustavo.fisner.design">
                         <i className="ri-instagram-line"></i>
                       </a>
                     </li>

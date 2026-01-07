@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   publisher: 'Gustavo Fisner',
 
   openGraph: {
-    title: 'Gustavo Fisner | Branding, Identidade Visual & UI/UX',
+    title: 'Gustavo Fisner | Branding, Identidade Visual, Artes Gráficas',
     description:
-      'Portfólio de Gustavo Fisner — Designer especializado em branding, identidade visual e UI/UX. Projetos estratégicos com estética, clareza e propósito.',
+      'Portfólio de Gustavo Fisner — Designer especializado em branding, identidade visual e artes gráficas. Projetos estratégicos com estética, clareza e propósito.',
     url: 'https://fisner-design.vercel.app', // 🔴 troque pelo domínio real
     siteName: 'Gustavo Fisner Design',
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         url: '/LOGO-VERDE.png', // 🔴 imagem dentro de /public
         width: 1200,
         height: 630,
-        alt: 'Gustavo Fisner — Designer Gráfico e UI/UX',
+        alt: 'Gustavo Fisner — Designer Gráfico',
       },
     ],
     locale: 'pt_BR',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Gustavo Fisner | Designer & Branding',
     description:
-      'Designer especializado em branding, identidade visual e UI/UX. Veja projetos e entre em contato.',
+      'Designer especializado em branding e identidade visual. Veja projetos e entre em contato.',
     images: ['/LOGO-VERDE.png'],
   },
 
