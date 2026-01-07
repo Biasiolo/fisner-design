@@ -39,7 +39,7 @@ export default function TestimonoalArea() {
                 <i className="fas fa-bullseye"></i>
               </div>
               <div className="text">
-                Desenvolvimento de peças e layouts estratégicos voltados para
+                Peças e layouts estratégicos voltados para
                 engajamento, posicionamento de marca e aumento de conversão.
               </div>
               <div className="testi-des">
