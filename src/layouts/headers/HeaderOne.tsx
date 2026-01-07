@@ -14,7 +14,7 @@ export default function HeaderOne() {
     <>
       <header className={`main-header ${sticky ? 'fixed-header' : ''}`}>
         <div className="header-upper">
-          <div className="teste">
+          <div className="nav-box">
             <div className="header-inner ">
               <div className="row align-items-center">
                 <div className="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">

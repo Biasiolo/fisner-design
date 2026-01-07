@@ -43,7 +43,7 @@ export default function TestimonoalArea() {
                 engajamento, posicionamento de marca e aumento de conversão.
               </div>
               <div className="testi-des">
-                <h5>Design para Marketing</h5>
+                <h5>Marketing Design</h5>
                 <span>Conversão • Performance • Comunicação Visual</span>
               </div>
             </div>
