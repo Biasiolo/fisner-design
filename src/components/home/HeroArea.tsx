@@ -40,7 +40,7 @@ export default function HeroArea() {
         <div className="row mt-3 align-items-center">
 
           {/* TEXTO */}
-          <div className="col-lg-5 order-1 order-lg-2">
+          <div className="col-lg-6 order-1 order-lg-2">
             <div
               className="hero-content mb-4 wow fadeInDown delay-0-2s
               d-flex flex-column
@@ -60,17 +60,19 @@ export default function HeroArea() {
                 />
               </div>
 
-              <p className="hero-description text-center pb-2">
+              <div className="hero-box d-flex justify-content-center ">
+                <p className="hero-description text-center py-2 my-3">
                 Criações que traduzem propósito, personalidade
                 e estratégia, desenvolvendo marcas, campanhas e projetos com estética,
                 coerência e significado.
               </p>
+              </div>
 
               <a
                 href="https://wa.me/5511986192043?text=Olá%20Gustavo!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="theme-btn hero-btn d-inline-flex justify-content-center align-items-center w-100 mb-4"
+                className="theme-btn hero-btn d-inline-flex justify-content-center align-items-center  "
               >
                 Entre em contato
               </a>
@@ -79,7 +81,7 @@ export default function HeroArea() {
           </div>
 
           {/* FOTO */}
-          <div className="col-lg-7 order-2 order-lg-1 ">
+          <div className=" foto-box col-lg-6 order-2 order-lg-1 ">
             <div className="hero-image  wow fadeInUp delay-0-2s ">
               <img
                 src="/assets/images/final/hero1.png"
