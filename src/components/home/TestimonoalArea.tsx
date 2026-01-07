@@ -33,19 +33,18 @@ export default function TestimonoalArea() {
             </div>
           </div>
 
-          {/* SKILL 2 */}
           <div className="col-lg-4 col-md-6">
             <div className="testimonial-item wow fadeInUp delay-0-4s">
               <div className="author icon-box">
-                <i className="fas fa-layer-group"></i>
+                <i className="fas fa-bullseye"></i>
               </div>
               <div className="text">
-                Criação de interfaces intuitivas e funcionais, focadas em
-                experiência do usuário, clareza e conversão.
+                Desenvolvimento de peças e layouts estratégicos voltados para
+                engajamento, posicionamento de marca e aumento de conversão.
               </div>
               <div className="testi-des">
-                <h5>UI / UX Design</h5>
-                <span>Usabilidade • Fluxos • Design Funcional</span>
+                <h5>Design para Marketing</h5>
+                <span>Conversão • Performance • Comunicação Visual</span>
               </div>
             </div>
           </div>

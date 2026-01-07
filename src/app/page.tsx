@@ -3,16 +3,16 @@ import Home from '@/components/home'
 import Wrapper from '@/layouts/Wrapper'
 
 export const metadata: Metadata = {
-  title: 'Gustavo Fisner | Designer Gráfico, Branding & UI/UX',
+  title: 'Gustavo Fisner | Designer Gráfico, Branding & MKT',
   description:
-    'Gustavo Fisner é designer especializado em branding, identidade visual e UI/UX design. Criação de marcas estratégicas, interfaces intuitivas e projetos visuais com foco em resultado. São José dos Campos – SP.',
+    'Gustavo Fisner é designer especializado em Branding, Identidade Visual e Design para Marketing. Criação de marcas estratégicas, artes, conceitos e projetos visuais com foco em resultado. São José dos Campos – SP.',
 
   keywords: [
     'Gustavo Fisner',
     'Designer Gráfico',
     'Branding',
     'Identidade Visual',
-    'UI UX Design',
+    'Marketing Design',
     'Designer Freelancer',
     'Design de Marcas',
     'Portfólio de Design',
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   publisher: 'Gustavo Fisner',
 
   openGraph: {
-    title: 'Gustavo Fisner | Branding, Identidade Visual, Artes Gráficas',
+    title: 'Gustavo Fisner | Branding, Identidade Visual, Marketing Design',
     description:
-      'Portfólio de Gustavo Fisner — Designer especializado em branding, identidade visual e artes gráficas. Projetos estratégicos com estética, clareza e propósito.',
+      'Portfólio de Gustavo Fisner — Designer especializado em branding, identidade visual e design para marketing. Projetos estratégicos com estética, clareza e propósito.',
     url: 'https://fisner-design.vercel.app', // 🔴 troque pelo domínio real
     siteName: 'Gustavo Fisner Design',
     images: [
