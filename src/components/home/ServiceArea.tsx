@@ -1,5 +1,13 @@
 import React from 'react'
 
+const WHATSAPP_BASE =
+  'https://wa.me/5511986192043?text='
+
+const message = (service: string) =>
+  encodeURIComponent(
+    `Olá Gustavo! Tenho interesse no serviço de ${service} e gostaria de conversar melhor.`
+  )
+
 export default function ServiceArea() {
   return (
     <>
@@ -18,58 +26,86 @@ export default function ServiceArea() {
 
             {/* Branding */}
             <div className="col-lg-7 col-md-7">
-              <div className="service-item wow fadeInUp delay-0-2s">
-                <i className="ri-arrow-right-up-line"></i>
-                <h5>01</h5>
-                <h4>Branding & Posicionamento</h4>
-                <p>
-                  Criação e desenvolvimento de marcas estratégicas, alinhando
-                  propósito, personalidade e posicionamento para construir
-                  identidades fortes, coerentes e memoráveis.
-                </p>
-              </div>
+              <a
+                href={`${WHATSAPP_BASE}${message('Branding & Posicionamento')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="service-link"
+              >
+                <div className="service-item wow fadeInUp delay-0-2s">
+                  <i className="ri-arrow-right-up-line"></i>
+                  <h5>01</h5>
+                  <h4>Branding & Posicionamento</h4>
+                  <p>
+                    Criação e desenvolvimento de marcas estratégicas, alinhando
+                    propósito, personalidade e posicionamento para construir
+                    identidades fortes, coerentes e memoráveis.
+                  </p>
+                </div>
+              </a>
             </div>
 
             {/* Identidade Visual */}
             <div className="col-lg-5 col-md-5">
-              <div className="service-item wow fadeInUp delay-0-4s">
-                <i className="ri-arrow-right-up-line"></i>
-                <h5>02</h5>
-                <h4>Identidade Visual</h4>
-                <p>
-                  Sistemas visuais completos, incluindo logotipo,
-                  tipografia, cores e aplicações, com consistência em 
-                  pontos de contato da marca.
-                </p>
-              </div>
+              <a
+                href={`${WHATSAPP_BASE}${message('Identidade Visual')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="service-link"
+              >
+                <div className="service-item wow fadeInUp delay-0-4s">
+                  <i className="ri-arrow-right-up-line"></i>
+                  <h5>02</h5>
+                  <h4>Identidade Visual</h4>
+                  <p>
+                    Sistemas visuais, incluindo logotipo,
+                    tipografia, cores e aplicações, com consistência em
+                    pontos de contato da marca.
+                  </p>
+                </div>
+              </a>
             </div>
 
             {/* Artes para Redes Sociais */}
             <div className="col-lg-6 col-md-5">
-              <div className="service-item wow fadeInUp delay-0-6s">
-                <i className="ri-arrow-right-up-line"></i>
-                <h5>03</h5>
-                <h4>Artes para Postagens</h4>
-                <p>
-                  Criação de artes estratégicas para redes sociais, focadas em
-                  comunicação visual clara, estética forte e alinhamento com a
-                  identidade da marca.
-                </p>
-              </div>
+              <a
+                href={`${WHATSAPP_BASE}${message('Artes para Postagens')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="service-link"
+              >
+                <div className="service-item wow fadeInUp delay-0-6s">
+                  <i className="ri-arrow-right-up-line"></i>
+                  <h5>03</h5>
+                  <h4>Artes para Postagens</h4>
+                  <p>
+                    Criação de artes estratégicas para redes sociais, focadas em
+                    comunicação visual clara, estética forte e alinhamento com a
+                    identidade da marca.
+                  </p>
+                </div>
+              </a>
             </div>
 
-            {/* Banners e Materiais Gráficos */}
+            {/* Banners */}
             <div className="col-lg-6 col-md-7">
-              <div className="service-item wow fadeInUp delay-0-8s">
-                <i className="ri-arrow-right-up-line"></i>
-                <h5>04</h5>
-                <h4>Banners & Materiais Gráficos</h4>
-                <p>
-                  Desenvolvimento de banners, peças promocionais e materiais gráficos
-                  digitais ou impressos, com impacto visual, clareza e estratégia
-                  de comunicação.
-                </p>
-              </div>
+              <a
+                href={`${WHATSAPP_BASE}${message('Banners & Materiais Gráficos')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="service-link"
+              >
+                <div className="service-item wow fadeInUp delay-0-8s">
+                  <i className="ri-arrow-right-up-line"></i>
+                  <h5>04</h5>
+                  <h4>Banners & Materiais Gráficos</h4>
+                  <p>
+                    Desenvolvimento de banners, peças promocionais e materiais gráficos
+                    digitais ou impressos, com impacto visual, clareza e estratégia
+                    de comunicação.
+                  </p>
+                </div>
+              </a>
             </div>
 
           </div>

@@ -18,7 +18,7 @@ export default function FooterOne() {
     </div>
   </div>
 
-              <div className="footer-top text-center">
+              <div className="col-lg-12 col-sm-6 footer-top text-center">
                 <p>Tem um projeto?</p>
                 <h2>
                   <a

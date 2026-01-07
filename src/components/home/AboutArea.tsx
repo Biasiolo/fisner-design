@@ -46,7 +46,7 @@ export default function AboutArea() {
 
             {/* CONTEÚDO */}
             <div className="col-lg-9 col-sm-9">
-              <div className="about-content-part wow px-3 fadeInUp delay-0-2s">
+              <div className="about-content-part wow px-3 fadeInUp delay-0-2s text-justify">
                 <p>
                   Oi, sou Gustavo Fisner, designer com mais de 5 anos de experiência
                   atuando na criação de identidades visuais, projetos de branding

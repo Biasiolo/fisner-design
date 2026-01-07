@@ -9,7 +9,7 @@ export default function BlogArea() {
         <div className="row">
           <div className="col-xl-12 col-lg-12">
             <div className="section-title wow fadeInUp delay-0-2s">
-              <h2>Desenvolvimento de Marcas</h2>
+              <h2>Projetos</h2>
             </div>
           </div>
         </div>

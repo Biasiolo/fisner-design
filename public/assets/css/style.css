@@ -196,11 +196,39 @@ mark {
   transition: transform 0.15s ease-out;
   will-change: transform;
 }
+.main-hero-area.hero-fisner {
+  position: relative;
+  overflow: hidden;
+}
+
+/* VIDEO */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* OVERLAY para contraste */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 21, 28, 0.75); /* ajuste fino */
+  z-index: 2;
+}
+
+/* CONTEÚDO POR CIMA */
+.hero-content-wrapper {
+  position: relative;
+  z-index: 3;
+}
 
 .main-hero-area.hero-fisner {
   background-color: #17151c;
-
-
+  min-height: 90vh;
   display: flex;
   align-items: flex-end; /* 🔥 tudo pelo bottom */
 }
@@ -208,22 +236,25 @@ mark {
 .main-hero-area.hero-fisner .container,
 .main-hero-area.hero-fisner .row {
   height: 100%;
-  
+
+
 }
 
-.main-hero-area.hero-fisner .col-lg-6 {
+.main-hero-area.hero-fisner .col-lg-7 {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  padding: 0;
 }
 
 /* FOTO */
 .main-hero-area.hero-fisner .hero-image {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content:center;
   height: 100%;
   width: 100%;
-  overflow: hidden; /* 🔥 permite corte lateral */
+  overflow:visible; /* 🔥 permite corte lateral */
+
 }
 
 .main-hero-area.hero-fisner .hero-photo {
@@ -232,8 +263,7 @@ mark {
   min-width: 100%;
   object-fit: cover;
   border-radius: 0;
-
-  /* 🔥 SUAVIZAÇÃO */
+  
   transition: transform 0.45s ease-out;
   will-change: transform;
 }
@@ -252,7 +282,7 @@ mark {
 
 @media (min-width: 992px) {
   .main-hero-area.hero-fisner .hero-photo {
-    max-height: 680px;
+    max-height: 720px;
   }
 }
 
@@ -276,7 +306,7 @@ mark {
 /* TEXTO */
 .main-hero-area.hero-fisner .hero-description {
   color: #fff8e8;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
 
 }
@@ -930,7 +960,7 @@ html {
 .fixed-header .header-upper {
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
-    border-bottom: 1px solid rgba(119, 119, 125, .2);
+    border-bottom: 1px solid rgba(119, 119, 125, .8);
     background: var(--primary-color);
 }
 
@@ -1529,9 +1559,10 @@ html {
 }
 
 .about-content-part p {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.4em;
     color: #fff8e8;
+    text-align: justify;
 }
 
 .about-image-part {
@@ -1692,18 +1723,20 @@ h2.about-pre-title {
     padding-top: 100px;
     padding-bottom: 100px;
     background: var(--primary-color);
+    
 
 }
 
 .service-item {
     position: relative;
-    padding: 60px 40px;
+    padding: 48px 32px;
     border-radius: 20px;
     border: 1px solid var(--border-color);
     background: var(--lighter-color);
     margin-bottom: 30px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    height: 300px;
 }
 
 
@@ -1716,7 +1749,7 @@ h2.about-pre-title {
 
 
 .service-item h5 {
-    margin-bottom: 60px;
+    margin-bottom: 48px;
     color: rgb(119, 119, 125);
     font-family: var(--text-font);
     border: 1px solid;
@@ -2146,9 +2179,7 @@ ul.extra-skills li i {
 .portfolio-box:hover img {
     -webkit-transform: scale(1.04);
     transform: scale(1.04);
-    -webkit-filter: blur(1.5px);
-    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="1.5" /></filter></svg>#filter');
-    filter: blur(1.5px)
+
 }
 
 .portfolio-box:hover .portfolio-caption {
@@ -2628,13 +2659,14 @@ ul.extra-skills li i {
 * ----------------------------------------------------------------------------------------
 */
 .main-footer {
-    background: var(--primary-color);
+    background: var(--main-color);
+    padding-top: 20px;
 }
 
 
 
 p.copy-left-text {
-    color: var(--main-color);
+    color: var(--primary-color);
     font-size: 12px;
     line-height: 20px;
     font-weight: 300;
@@ -2643,7 +2675,7 @@ p.copy-left-text {
 }
 
 p.copy-right-text {
-    color: var(--main-color);
+    color: var(--primary-color);
     font-size: 12px;
     line-height: 20px;
     font-weight: 300;
@@ -2653,20 +2685,32 @@ p.copy-right-text {
 
 .footer-top h2 a {
 
-    font-size: 4rem;
+    font-size: 80px;
     line-height: 1em;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
 }
+.footer-top h2 a:hover {
+
+    color: var(--primary-color);
+}
+
+@media (max-width: 575px) {
+    .footer-top h2 a {
+        font-size: 48px;
+    line-height: -200px;
+    font-weight: 700;
+    }
+}
 
 .footer-top{
 padding-top: 40px;
- padding-bottom: 100px;
+ padding-bottom: 80px;
 }
 .footer-top p{
 
-    color: var(--main-color);
+    color: var(--primary-color);
     font-size: 20px;
     text-align: center;
 }
