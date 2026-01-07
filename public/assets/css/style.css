@@ -1753,7 +1753,7 @@ h2.about-pre-title {
     margin-bottom: 30px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    height: 300px;
+    height: 320px;
 }
 
 
@@ -1817,6 +1817,19 @@ h2.about-pre-title {
     background: var(--primary-color);
 }
 
+.service-cta {
+  display: inline-block;
+  margin-top: 16px;
+  font-weight: 600;
+  color: #aab72a;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.service-item:hover .service-cta {
+  transform: translateX(4px);
+  opacity: 0.9;
+  color: var(--black-color);
+}
 
 /*
 * ----------------------------------------------------------------------------------------
