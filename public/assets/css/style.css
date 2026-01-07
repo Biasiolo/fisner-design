@@ -214,14 +214,6 @@ mark {
     z-index: 1;
 }
 
-/* OVERLAY para contraste */
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(23, 21, 28, 0.75);
-    /* ajuste fino */
-    z-index: 2;
-}
 
 /* CONTEÚDO POR CIMA */
 .hero-content-wrapper {
@@ -231,22 +223,17 @@ mark {
 
 .main-hero-area.hero-fisner {
     background-color: #17151c;
-    min-height: 90vh;
+    min-height: 85vh;
     display: flex;
-    align-items: flex-end;
+    align-items: end;
     /* 🔥 tudo pelo bottom */
 }
 
-.main-hero-area.hero-fisner .container,
-.main-hero-area.hero-fisner .row {
-    height: 100%;
 
-
-}
 
 .main-hero-area.hero-fisner .col-lg-7 {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     padding: 0;
 }
 
@@ -266,7 +253,7 @@ mark {
     height: 100%;
     width: auto;
     min-width: 100%;
-    object-fit: cover;
+    object-fit:fill;
     border-radius: 0;
 
     transition: transform 0.35s ease-out;
@@ -280,14 +267,15 @@ mark {
 /* Responsivo */
 @media (max-width: 768px) {
     .hero-image-container {
-        height: 400px;
+        height: 600px;
+        min-width: 100%;
     }
 }
 
 
 @media (min-width: 992px) {
     .main-hero-area.hero-fisner .hero-photo {
-        max-height: 720px;
+        max-height: 800px;
     }
 }
 

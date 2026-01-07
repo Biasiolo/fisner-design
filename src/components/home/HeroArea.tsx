@@ -36,19 +36,19 @@ export default function HeroArea() {
       <div className="hero-overlay"></div>
 
       {/* CONTEÚDO */}
-      <div className="container justify-content-between align-items-center pt-4 hero-content-wrapper">
+      <div className=" justify-content-between align-items-center pt-4 hero-content-wrapper">
         <div className="row mt-3 align-items-center">
 
           {/* TEXTO */}
           <div className="col-lg-5 order-1 order-lg-2">
             <div
-              className="hero-content wow fadeInDown delay-0-2s
+              className="hero-content mb-4 wow fadeInDown delay-0-2s
               d-flex flex-column
-              align-items-center align-items-lg-start
-              text-center text-lg-start"
+              align-items-center align-items-lg-center
+              text-center text-lg-center"
             >
 
-              <div className="w-100 d-flex justify-content-center my-4">
+              <div className="w-100 d-flex justify-content-center ">
                 <img
                   src="/assets/images/final/LOGO-VERDE.png"
                   alt="Gustavo Fisner Design"
