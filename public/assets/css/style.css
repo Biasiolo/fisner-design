@@ -214,7 +214,12 @@ mark {
     object-fit: cover;
     z-index: 1;
 }
-
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 21, 28, 0.5); /* ajuste fino */
+  z-index: 2;
+}
 
 /* CONTEÚDO POR CIMA */
 .hero-content-wrapper {
@@ -236,28 +241,25 @@ mark {
     display: flex;
     align-items: flex-end;
     padding: 0;
+    margin: 0;
 }
 
 /* FOTO */
 .main-hero-area.hero-fisner .hero-image {
-    display: flex;
-    align-items: flex-start;
-    justify-content:end;
-    height: 100%;
+    height: 105%;
     width: 100%;
     overflow: visible;
-    /* 🔥 permite corte lateral */
     margin: 0 auto;
-
+    padding: 0;
+    padding-left: 80px;
 }
 
 .main-hero-area.hero-fisner .hero-photo {
-    height: 100%;
+    height: 105%;
     width: auto;
     min-width: 100%;
-    object-fit:fill;
+    object-fit:cover;
     border-radius: 0;
-
     transition: transform 0.35s ease-out;
     will-change: transform;
 }
@@ -268,9 +270,8 @@ mark {
 
 /* Responsivo */
 @media (max-width: 768px) {
-    .hero-image-container {
-        height: 600px;
-        min-width: 100%;
+    .main-hero-area.hero-fisner .hero-image {
+        padding-left: 0;
     }
 }
 
@@ -950,7 +951,7 @@ html {
 * ----------------------------------------------------------------------------------------
 */
 .teste {
-    padding: 0 40px;
+    padding: 0 6.5rem;
 }
 
 .header-area {

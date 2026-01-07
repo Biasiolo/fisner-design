@@ -36,11 +36,11 @@ export default function HeroArea() {
       <div className="hero-overlay"></div>
 
       {/* CONTEÚDO */}
-      <div className=" justify-content-between align-items-center pt-4 hero-content-wrapper">
-        <div className="row mt-3 align-items-center">
+      <div className=" justify-content-between align-items-center  hero-content-wrapper">
+        <div className="row mt-4 align-items-end">
 
           {/* TEXTO */}
-          <div className="col-lg-6 order-1 order-lg-2">
+          <div className="col-lg-6 order-1 order-lg-2  pb-4">
             <div
               className="hero-content mb-4 wow fadeInDown delay-0-2s
               d-flex flex-column
