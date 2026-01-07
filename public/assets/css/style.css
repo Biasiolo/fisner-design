@@ -282,22 +282,36 @@ mark {
     }
 }
 
-/* LOGO */
+/* =========================
+   HERO LOGO – RESPONSIVO
+========================= */
+
+/* 📱 CELULAR (default) */
 .main-hero-area.hero-fisner .hero-logo {
-    max-width: 220px;
+  max-width: 200px;
 }
 
+/* 📲 TABLET */
 @media (min-width: 576px) {
-    .main-hero-area.hero-fisner .hero-logo {
-        max-width: 260px;
-    }
+  .main-hero-area.hero-fisner .hero-logo {
+    max-width: 240px;
+  }
 }
 
-@media (min-width: 992px) {
-    .main-hero-area.hero-fisner .hero-logo {
-        max-width: 400px;
-    }
+/* 💻 NOTEBOOK */
+@media (min-width: 1300px) {
+  .main-hero-area.hero-fisner .hero-logo {
+    max-width: 300px;
+  }
 }
+
+/* 🖥️ DESKTOP */
+@media (min-width: 1400px) {
+  .main-hero-area.hero-fisner .hero-logo {
+    max-width: 400px;
+  }
+}
+
 
 /* TEXTO */
 .main-hero-area.hero-fisner .hero-description {
