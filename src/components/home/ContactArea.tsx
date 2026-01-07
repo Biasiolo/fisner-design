@@ -50,7 +50,7 @@ export default function ContactArea() {
         <div className="row">
 
           {/* INFORMAÇÕES */}
-          <div className="col-lg-4 ">
+          <div className="col-lg-4 mb-2">
             <div className="contact-content-part wow fadeInUp delay-0-2s">
 
               <div className="single-contact">
@@ -99,7 +99,7 @@ export default function ContactArea() {
           </div>
 
           {/* FORMULÁRIO */}
-          <div className="col-lg-8">
+          <div className="col-lg-8 mb-2">
             <div className="contact-form contact-form-area wow fadeInUp delay-0-4s">
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="row">

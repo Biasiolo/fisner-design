@@ -37,7 +37,7 @@ export default function FooterOne() {
           <div className="row align-items-center mt-4 pb-4">
 
             {/* ESQUERDA */}
-            <div className="col-lg-4 col-sm-12 text-center text-lg-start">
+            <div className="col-lg-4 col-sm-12 text-center text-lg-start order-2 order-lg-1">
               <p className="copy-left-text mb-0">
                 Desenvolvido por{' '}
                 <a
@@ -51,7 +51,7 @@ export default function FooterOne() {
             </div>
 
             {/* LOGO CENTRAL */}
-            <div className="col-lg-4 col-sm-12 text-center my-3 my-lg-0">
+            <div className="col-lg-4 col-sm-12 text-center my-lg-0 order-1 order-lg-2">
               <img
                 src="/assets/images/final/LOGO-VERDE.png"
                 alt="Fisner Design"
@@ -72,7 +72,7 @@ export default function FooterOne() {
             </div>
 
             {/* DIREITA */}
-            <div className="col-lg-4 col-sm-12 text-center text-lg-end">
+            <div className="col-lg-4 col-sm-12 text-center text-lg-end order-3 order-lg-3">
               <p className="copy-right-text mb-0">
                 © Copyright {new Date().getFullYear()}
               </p>
