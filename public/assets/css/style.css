@@ -993,14 +993,14 @@ html {
 }
 
 .fixed-header .header-inner {
-    padding: 15px 0px;
+    padding: 20px 0px;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
 
 }
 
 .header-inner {
-    padding: 20px 0px;
+    padding: 15px 0px;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
     
@@ -1015,7 +1015,8 @@ html {
 }
 
 .logo img {
-    width: 60px;
+    width: 42px;
+    height: 42px;
 }
 
 .main-menu {

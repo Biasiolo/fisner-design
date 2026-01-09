@@ -93,13 +93,13 @@ skills: {
     },
     {
       text:
-        'Strategic layouts and visual pieces focused on engagement, brand positioning, and conversion growth.',
+        'Layouts and visual pieces focused on engagement, brand positioning, and conversion growth.',
       title: 'Marketing Design',
       subtitle: 'Conversion • Performance • Visual Communication',
     },
     {
       text:
-        'Creative direction applied to campaigns, digital projects, and graphic materials with a consistent visual narrative.',
+        'Creative direction applied to campaigns, digital projects, and graphic materials.',
       title: 'Creative Direction',
       subtitle: 'Concept • Aesthetics • Communication',
     },
