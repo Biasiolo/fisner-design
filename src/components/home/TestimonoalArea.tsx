@@ -1,6 +1,19 @@
 import React from 'react'
 
-export default function TestimonoalArea() {
+interface SkillItem {
+  text: string
+  title: string
+  subtitle: string
+}
+
+interface TestimonoalAreaProps {
+  dict: {
+    title: string
+    items: SkillItem[]
+  }
+}
+
+export default function TestimonoalArea({ dict }: TestimonoalAreaProps) {
   return (
     <section className="testimonials-area">
       <div className="container">
@@ -9,7 +22,7 @@ export default function TestimonoalArea() {
         <div className="row">
           <div className="col-xl-12 col-lg-12">
             <div className="section-title section-black-title wow fadeInUp delay-0-2s">
-              <h2>Skills & Ferramentas</h2>
+              <h2>{dict.title}</h2>
             </div>
           </div>
         </div>
@@ -23,28 +36,27 @@ export default function TestimonoalArea() {
                 <i className="fas fa-palette"></i>
               </div>
               <div className="text">
-                Desenvolvimento de identidades visuais sólidas, alinhando
-                estética, posicionamento e propósito de marca.
+                {dict.items[0].text}
               </div>
               <div className="testi-des">
-                <h5>Design Gráfico</h5>
-                <span>Estratégia • Conceito • Consistência</span>
+                <h5>{dict.items[0].title}</h5>
+                <span>{dict.items[0].subtitle}</span>
               </div>
             </div>
           </div>
 
+          {/* SKILL 2 */}
           <div className="col-lg-4 col-md-6">
             <div className="testimonial-item wow fadeInUp delay-0-4s">
               <div className="author icon-box">
                 <i className="fas fa-bullseye"></i>
               </div>
               <div className="text">
-                Peças e layouts estratégicos voltados para
-                engajamento, posicionamento de marca e aumento de conversão.
+                {dict.items[1].text}
               </div>
               <div className="testi-des">
-                <h5>Marketing Design</h5>
-                <span>Conversão • Performance • Comunicação Visual</span>
+                <h5>{dict.items[1].title}</h5>
+                <span>{dict.items[1].subtitle}</span>
               </div>
             </div>
           </div>
@@ -56,46 +68,43 @@ export default function TestimonoalArea() {
                 <i className="fas fa-lightbulb"></i>
               </div>
               <div className="text">
-                Direção criativa aplicada a campanhas, projetos digitais e
-                materiais gráficos com narrativa visual consistente.
+                {dict.items[2].text}
               </div>
               <div className="testi-des">
-                <h5>Direção Criativa</h5>
-                <span>Conceito • Estética • Comunicação</span>
+                <h5>{dict.items[2].title}</h5>
+                <span>{dict.items[2].subtitle}</span>
               </div>
             </div>
           </div>
 
-          {/* FERRAMENTA / SOFT SKILL */}
+          {/* SKILL 4 */}
           <div className="col-lg-6 col-md-6">
             <div className="testimonial-item wow fadeInUp delay-0-8s">
               <div className="author icon-box">
                 <i className="fas fa-comments"></i>
               </div>
               <div className="text">
-                Capacidade de comunicação clara com clientes e equipes,
-                traduzindo ideias e objetivos em soluções visuais eficazes.
+                {dict.items[3].text}
               </div>
               <div className="testi-des">
-                <h5>Comunicação & Colaboração</h5>
-                <span>Briefing • Feedback • Trabalho em Equipe</span>
+                <h5>{dict.items[3].title}</h5>
+                <span>{dict.items[3].subtitle}</span>
               </div>
             </div>
           </div>
 
-          {/* FERRAMENTA */}
+          {/* SKILL 5 */}
           <div className="col-lg-6 col-md-6">
             <div className="testimonial-item wow fadeInUp delay-0-9s">
               <div className="author icon-box">
                 <i className="fa-solid fa-pen-to-square"></i>
               </div>
               <div className="text">
-                Ecossistema completo para criação gráfica, edição, motion e
-                materiais visuais de alta qualidade.
+                {dict.items[4].text}
               </div>
               <div className="testi-des">
-                <h5>Adobe Creative Cloud</h5>
-                <span>Photoshop • Illustrator • After Effects</span>
+                <h5>{dict.items[4].title}</h5>
+                <span>{dict.items[4].subtitle}</span>
               </div>
             </div>
           </div>

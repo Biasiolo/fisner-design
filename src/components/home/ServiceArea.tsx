@@ -3,12 +3,41 @@ import React from 'react'
 const WHATSAPP_BASE =
   'https://wa.me/5511986192043?text='
 
-const message = (service: string) =>
-  encodeURIComponent(
-    `Olá Gustavo! Tenho interesse no serviço de ${service} e gostaria de conversar melhor.`
-  )
+interface ServiceAreaProps {
+  dict: {
+    title: string
+    whatsappMessage: string
+    items: {
+      branding: {
+        title: string
+        description: string
+        cta: string
+      }
+      visualIdentity: {
+        title: string
+        description: string
+        cta: string
+      }
+      socialMedia: {
+        title: string
+        description: string
+        cta: string
+      }
+      banners: {
+        title: string
+        description: string
+        cta: string
+      }
+    }
+  }
+}
 
-export default function ServiceArea() {
+export default function ServiceArea({ dict }: ServiceAreaProps) {
+  const message = (service: string) =>
+    encodeURIComponent(
+      dict.whatsappMessage.replace('{{service}}', service)
+    )
+
   return (
     <section id="services" className="services-area">
       <div className="container">
@@ -17,7 +46,7 @@ export default function ServiceArea() {
         <div className="row">
           <div className="col-xl-12 col-lg-12">
             <div className="section-title section-black-title wow fadeInUp delay-0-2s">
-              <h2>Serviços</h2>
+              <h2>{dict.title}</h2>
             </div>
           </div>
         </div>
@@ -27,7 +56,7 @@ export default function ServiceArea() {
           {/* Branding */}
           <div className="col-lg-7 col-md-7">
             <a
-              href={`${WHATSAPP_BASE}${message('Branding & Posicionamento')}`}
+              href={`${WHATSAPP_BASE}${message(dict.items.branding.title)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="service-link"
@@ -35,15 +64,10 @@ export default function ServiceArea() {
               <div className="service-item wow fadeInUp delay-0-2s">
                 <i className="ri-arrow-right-up-line"></i>
                 <h5>01</h5>
-                <h4>Branding & Posicionamento</h4>
-                <p>
-                  Criação e desenvolvimento de marcas estratégicas, alinhando
-                  propósito, personalidade e posicionamento para construir
-                  identidades fortes, coerentes e memoráveis.
-                </p>
-
+                <h4>{dict.items.branding.title}</h4>
+                <p>{dict.items.branding.description}</p>
                 <span className="service-cta">
-                  Falar no WhatsApp →
+                  {dict.items.branding.cta}
                 </span>
               </div>
             </a>
@@ -52,7 +76,7 @@ export default function ServiceArea() {
           {/* Identidade Visual */}
           <div className="col-lg-5 col-md-5">
             <a
-              href={`${WHATSAPP_BASE}${message('Identidade Visual')}`}
+              href={`${WHATSAPP_BASE}${message(dict.items.visualIdentity.title)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="service-link"
@@ -60,14 +84,10 @@ export default function ServiceArea() {
               <div className="service-item wow fadeInUp delay-0-4s">
                 <i className="ri-arrow-right-up-line"></i>
                 <h5>02</h5>
-                <h4>Identidade Visual</h4>
-                <p>
-                  Sistemas visuais, incluindo logotipo, tipografia, cores e
-                  aplicações, com consistência em pontos de contato da marca.
-                </p>
-
+                <h4>{dict.items.visualIdentity.title}</h4>
+                <p>{dict.items.visualIdentity.description}</p>
                 <span className="service-cta">
-                  Solicitar orçamento →
+                  {dict.items.visualIdentity.cta}
                 </span>
               </div>
             </a>
@@ -76,7 +96,7 @@ export default function ServiceArea() {
           {/* Artes */}
           <div className="col-lg-6 col-md-5">
             <a
-              href={`${WHATSAPP_BASE}${message('Artes para Postagens')}`}
+              href={`${WHATSAPP_BASE}${message(dict.items.socialMedia.title)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="service-link"
@@ -84,14 +104,10 @@ export default function ServiceArea() {
               <div className="service-item wow fadeInUp delay-0-6s">
                 <i className="ri-arrow-right-up-line"></i>
                 <h5>03</h5>
-                <h4>Artes para Postagens</h4>
-                <p>
-                  Criação de artes estratégicas para redes sociais, focadas em
-                  comunicação visual clara e alinhamento com a marca.
-                </p>
-
+                <h4>{dict.items.socialMedia.title}</h4>
+                <p>{dict.items.socialMedia.description}</p>
                 <span className="service-cta">
-                  Conversar sobre o projeto →
+                  {dict.items.socialMedia.cta}
                 </span>
               </div>
             </a>
@@ -100,7 +116,7 @@ export default function ServiceArea() {
           {/* Banners */}
           <div className="col-lg-6 col-md-7">
             <a
-              href={`${WHATSAPP_BASE}${message('Banners & Materiais Gráficos')}`}
+              href={`${WHATSAPP_BASE}${message(dict.items.banners.title)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="service-link"
@@ -108,14 +124,10 @@ export default function ServiceArea() {
               <div className="service-item wow fadeInUp delay-0-8s">
                 <i className="ri-arrow-right-up-line"></i>
                 <h5>04</h5>
-                <h4>Banners & Materiais Gráficos</h4>
-                <p>
-                  Desenvolvimento de banners e materiais gráficos digitais ou
-                  impressos, com impacto visual e estratégia.
-                </p>
-
+                <h4>{dict.items.banners.title}</h4>
+                <p>{dict.items.banners.description}</p>
                 <span className="service-cta">
-                  Pedir proposta →
+                  {dict.items.banners.cta}
                 </span>
               </div>
             </a>

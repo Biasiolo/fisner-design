@@ -1,7 +1,6 @@
 "use client"
 
-import React, { useState, useRef } from 'react'
-
+import React, { useState } from 'react'
 
 const ITEMS_PER_PAGE = 3
 
@@ -56,47 +55,58 @@ const projects = [
   },
 ]
 
-export default function BlogArea() {
+interface BlogAreaProps {
+  dict: {
+    title: string
+    label: string
+    openPdf: string
+    prev: string
+    next: string
+  }
+}
+
+export default function BlogArea({ dict }: BlogAreaProps) {
   const [page, setPage] = useState(0)
- 
 
   const start = page * ITEMS_PER_PAGE
   const currentProjects = projects.slice(start, start + ITEMS_PER_PAGE)
   const totalPages = Math.ceil(projects.length / ITEMS_PER_PAGE)
 
   const handlePageChange = (newPage: number) => {
-  setPage(newPage)
+    setPage(newPage)
 
-  setTimeout(() => {
-    const section = document.getElementById('projetos')
-    if (section) {
-      const yOffset = -80 // ajuste se tiver header fixo
-      const y =
-        section.getBoundingClientRect().top + window.pageYOffset + yOffset
+    setTimeout(() => {
+      const section = document.getElementById('projetos')
+      if (section) {
+        const yOffset = -80
+        const y =
+          section.getBoundingClientRect().top +
+          window.pageYOffset +
+          yOffset
 
-      window.scrollTo({
-        top: y,
-        behavior: 'smooth',
-      })
-    }
-  }, 50)
-}
+        window.scrollTo({
+          top: y,
+          behavior: 'smooth',
+        })
+      }
+    }, 50)
+  }
 
   return (
-    <section id="projetos" className="blog-area" >
+    <section id="projetos" className="blog-area">
       <div className="container">
 
         {/* TÍTULO */}
         <div className="row">
           <div className="col-xl-12">
             <div className="section-title">
-              <h2>Projetos</h2>
+              <h2>{dict.title}</h2>
             </div>
           </div>
         </div>
 
         {/* PROJETOS */}
-        {currentProjects.map((project: { pdf: string | undefined; image: string | undefined; alt: string | undefined; title: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined }, index: React.Key | null | undefined) => (
+        {currentProjects.map((project, index) => (
           <div className="row blog-post-box align-items-center" key={index}>
             <div className="col-lg-6">
               <div className="blog-post-img">
@@ -108,7 +118,7 @@ export default function BlogArea() {
 
             <div className="col-lg-6">
               <div className="blog-post-caption">
-                <h3>Projeto</h3>
+                <h3>{dict.label}</h3>
                 <h2>
                   <a
                     className="link-decoration"
@@ -125,7 +135,7 @@ export default function BlogArea() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Abrir PDF <i className="ri-arrow-right-line" />
+                  {dict.openPdf} <i className="ri-arrow-right-line" />
                 </a>
               </div>
             </div>
@@ -141,7 +151,7 @@ export default function BlogArea() {
               disabled={page === 0}
               onClick={() => handlePageChange(page - 1)}
             >
-              ← Anterior
+              {dict.prev}
             </button>
 
             <button
@@ -149,7 +159,7 @@ export default function BlogArea() {
               disabled={page + 1 >= totalPages}
               onClick={() => handlePageChange(page + 1)}
             >
-              Próximo →
+              {dict.next}
             </button>
 
           </div>

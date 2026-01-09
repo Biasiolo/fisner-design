@@ -1,6 +1,4 @@
-import "../styles/index.css"
-import type { Metadata } from "next"
-
+import "../../styles/index.css"
 
 
 export default function RootLayout({
@@ -9,7 +7,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
+    <html>
       <head>
         {/* Google Fonts */}
         <link

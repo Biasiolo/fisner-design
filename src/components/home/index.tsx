@@ -1,4 +1,3 @@
-
 import React from 'react'
 import HeroArea from './HeroArea'
 import BrandArea from './BrandArea'
@@ -11,25 +10,31 @@ import BlogArea from './BlogArea'
 import ContactArea from './ContactArea'
 import FooterOne from '@/layouts/footers/FooterOne'
 
-export default function Home() {
+interface HomeProps {
+  dict: any
+}
+
+export default function Home({ dict }: HomeProps) {
   return (
     <>
       <HeaderOne />
+
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <HeroArea />
-            <BrandArea />
-            <AboutArea />
-            <ServiceArea />
-            <PortfolioArea />
-            <TestimonoalArea />
-            <BlogArea />
-            <ContactArea />
+            <HeroArea dict={dict.hero} />
+            <BrandArea dict={dict.brand} />
+            <AboutArea dict={dict.about} />
+            <ServiceArea dict={dict.services} />
+            <PortfolioArea dict={dict.portfolio} />
+            <TestimonoalArea dict={dict.skills} />
+            <BlogArea dict={dict.projects} />
+            <ContactArea dict={dict.contact} />
           </main>
-          <FooterOne />
+
+          <FooterOne dict={dict.footer}/>
         </div>
-      </div> 
+      </div>
     </>
   )
 }

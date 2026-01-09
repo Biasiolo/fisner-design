@@ -1,8 +1,11 @@
 "use client"
 import React, { useState } from 'react'
 
-export default function ContactArea() {
+interface ContactAreaProps {
+  dict: any
+}
 
+export default function ContactArea({ dict }: ContactAreaProps) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [service, setService] = useState('')
@@ -14,19 +17,19 @@ export default function ContactArea() {
     const whatsappNumber = '5511986192043'
 
     const text = [
-  'Olá Gustavo!',
-  '',
-  'Tenho interesse em um orçamento com os seguintes dados:',
-  '',
-  `► Nome: ${name}`,
-  `► Email: ${email}`,
-  `► Serviço: ${service}`,
-  '',
-  '► Mensagem:',
-  message,
-  '',
-  'Aguardo retorno',
-].join('\n')
+      dict.whatsappMessage.greeting,
+      '',
+      dict.whatsappMessage.interest,
+      '',
+      `${dict.whatsappMessage.name} ${name}`,
+      `${dict.whatsappMessage.email} ${email}`,
+      `${dict.whatsappMessage.service} ${service}`,
+      '',
+      dict.whatsappMessage.message,
+      message,
+      '',
+      dict.whatsappMessage.closing,
+    ].join('\n')
 
     const encodedText = encodeURIComponent(text)
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`
@@ -41,8 +44,8 @@ export default function ContactArea() {
         {/* TÍTULO */}
         <div className="row">
           <div className="col-xl-12 col-lg-12">
-            <div className="section-title section-black-title wow fadeInUp delay-0-2s">
-              <h2>Contato</h2>
+            <div className="section-title section-black-title">
+              <h2>{dict.title}</h2>
             </div>
           </div>
         </div>
@@ -51,21 +54,21 @@ export default function ContactArea() {
 
           {/* INFORMAÇÕES */}
           <div className="col-lg-4 mb-2">
-            <div className="contact-content-part wow fadeInUp delay-0-2s">
+            <div className="contact-content-part">
 
               <div className="single-contact">
                 <span className="circle-btn">
                   <i className="ri-map-pin-line"></i>
                 </span>
-                <h2>Localização</h2>
-                <p>São José dos Campos – SP</p>
+                <h2>{dict.locationTitle}</h2>
+                <p>{dict.locationValue}</p>
               </div>
 
               <div className="single-contact">
                 <span className="circle-btn">
                   <i className="ri-whatsapp-line"></i>
                 </span>
-                <h2>WhatsApp</h2>
+                <h2>{dict.whatsappTitle}</h2>
                 <p>+55 11 98619-2043</p>
               </div>
 
@@ -73,12 +76,12 @@ export default function ContactArea() {
                 <span className="circle-btn">
                   <i className="ri-mail-line"></i>
                 </span>
-                <h2>Email</h2>
+                <h2>{dict.emailTitle}</h2>
                 <p>gustavofisnerdesign@gmail.com</p>
               </div>
 
               <div className="single-contact">
-                <h2>Redes</h2>
+                <h2>{dict.socialTitle}</h2>
                 <div className="about-social">
                   <ul>
                     <li>
@@ -100,68 +103,68 @@ export default function ContactArea() {
 
           {/* FORMULÁRIO */}
           <div className="col-lg-8 mb-2">
-            <div className="contact-form contact-form-area wow fadeInUp delay-0-4s">
+            <div className="contact-form contact-form-area">
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="row">
 
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label>Nome</label>
+                      <label>{dict.form.nameLabel}</label>
                       <input
                         type="text"
                         className="form-control"
                         value={name}
                         onChange={e => setName(e.target.value)}
-                        placeholder="Seu nome"
+                        placeholder={dict.form.namePlaceholder}
                         required
                       />
-                      <label className="for-icon"><i className="far fa-user"></i></label>
                     </div>
                   </div>
 
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label>Email</label>
+                      <label>{dict.form.emailLabel}</label>
                       <input
                         type="email"
                         className="form-control"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
-                        placeholder="seu@email.com"
+                        placeholder={dict.form.emailPlaceholder}
                         required
                       />
-                      <label className="for-icon"><i className="far fa-envelope"></i></label>
                     </div>
                   </div>
 
                   <div className="col-md-12">
                     <div className="form-group">
-                      <label>Serviço desejado</label>
+                      <label>{dict.form.serviceLabel}</label>
                       <select
                         className="form-control"
                         value={service}
                         onChange={e => setService(e.target.value)}
                         required
                       >
-                        <option value="">Selecione um serviço</option>
-                        <option value="Branding / Identidade Visual">Branding / Identidade Visual</option>
-                        <option value="UI / UX Design">UI / UX Design</option>
-                        <option value="Direção Criativa">Direção Criativa</option>
-                        <option value="Materiais Gráficos">Materiais Gráficos</option>
-                        <option value="Outro">Outro</option>
+                        <option value="">
+                          {dict.form.servicePlaceholder}
+                        </option>
+                        {dict.form.services.map((item: string, index: number) => (
+                          <option key={index} value={item}>
+                            {item}
+                          </option>
+                        ))}
                       </select>
                     </div>
                   </div>
 
                   <div className="col-md-12">
                     <div className="form-group">
-                      <label>Mensagem</label>
+                      <label>{dict.form.messageLabel}</label>
                       <textarea
                         className="form-control"
                         rows={4}
                         value={message}
                         onChange={e => setMessage(e.target.value)}
-                        placeholder="Conte um pouco sobre o seu projeto"
+                        placeholder={dict.form.messagePlaceholder}
                         required
                       />
                     </div>
@@ -170,7 +173,7 @@ export default function ContactArea() {
                   <div className="col-md-12">
                     <div className="form-group mb-0">
                       <button type="submit" className="theme-btn">
-                        Enviar para WhatsApp <i className="ri-whatsapp-line"></i>
+                        {dict.form.submit} <i className="ri-whatsapp-line"></i>
                       </button>
                     </div>
                   </div>
