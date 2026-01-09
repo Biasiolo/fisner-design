@@ -13,6 +13,7 @@ type HeaderOneProps = {
 
 function LanguageSwitch() {
   const pathname = usePathname()
+  const currentLang = pathname.startsWith("/en") ? "en" : "pt"
 
   const newPath = pathname.startsWith("/en")
     ? pathname.replace("/en", "/pt")
@@ -20,7 +21,9 @@ function LanguageSwitch() {
 
   return (
     <Link href={newPath} className="language-switch">
-      🇧🇷 / 🇺🇸
+      <span className={currentLang === "pt" ? "active" : ""}>🇧🇷</span>
+      <span className="separator">/</span>
+      <span className={currentLang === "en" ? "active" : ""}>🇺🇸</span>
     </Link>
   )
 }
