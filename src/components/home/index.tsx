@@ -17,7 +17,7 @@ interface HomeProps {
 export default function Home({ dict }: HomeProps) {
   return (
     <>
-      <HeaderOne />
+      <HeaderOne dict={dict}/>
 
       <div id="smooth-wrapper">
         <div id="smooth-content">

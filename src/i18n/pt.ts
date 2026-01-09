@@ -1,4 +1,12 @@
 const pt = {
+  nav: {
+    home: 'Início',
+    about: 'Sobre',
+    services: 'Serviços',
+    highlights: 'Destaques',
+    projects: 'Projetos',
+    contact: 'Contato',
+  },
   hero: {
     description:
       'Criações que traduzem propósito, personalidade e estratégia, desenvolvendo marcas, campanhas e projetos com estética, coerência e significado.',
@@ -138,7 +146,7 @@ contact: {
 
     services: [
       'Branding / Identidade Visual',
-      'UI / UX Design',
+      'Marketing Design',
       'Direção Criativa',
       'Materiais Gráficos',
       'Outro',

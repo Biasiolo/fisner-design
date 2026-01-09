@@ -1,4 +1,12 @@
 const en = {
+  nav: {
+    home: 'Home',
+    about: 'About',
+    services: 'Services',
+    highlights: 'Highlights',
+    projects: 'Projects',
+    contact: 'Contact',
+  },
   hero: {
     description:
       'Creations that translate purpose, personality, and strategy — developing brands, campaigns, and projects with aesthetics, consistency, and meaning.',
@@ -138,7 +146,7 @@ contact: {
 
     services: [
       'Branding / Visual Identity',
-      'UI / UX Design',
+      'Marketing Design',
       'Creative Direction',
       'Graphic Materials',
       'Other',

@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import UseSticky from "@/hooks/UseSticky"
 import NavMenu from "./NavMenu"
@@ -7,9 +7,10 @@ import Sidebar from "@/components/common/Sidebar"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-/**
- * Language Switch Component
- */
+type HeaderOneProps = {
+  dict: any
+}
+
 function LanguageSwitch() {
   const pathname = usePathname()
 
@@ -24,10 +25,7 @@ function LanguageSwitch() {
   )
 }
 
-/**
- * Header Component
- */
-export default function HeaderOne() {
+export default function HeaderOne({ dict }: HeaderOneProps) {
   const { sticky } = UseSticky()
   const [open, setOpen] = useState(false)
 
@@ -38,6 +36,8 @@ export default function HeaderOne() {
           <div className="nav-box">
             <div className="header-inner">
               <div className="row align-items-center">
+
+                {/* LOGO */}
                 <div className="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">
                   <div className="logo-area">
                     <div className="logo wow fadeInUp delay-0-2s">
@@ -47,15 +47,15 @@ export default function HeaderOne() {
                       />
                     </div>
 
-                    {/* Language Switch */}
                     <LanguageSwitch />
                   </div>
                 </div>
 
+                {/* MENU */}
                 <div className="col-xl-10 col-lg-10 col-md-6 col-6 col-sm-9">
                   <div className="main-menu d-none d-lg-block">
                     <nav id="mobile-menu">
-                      <NavMenu />
+                      <NavMenu nav={dict.nav} />
                     </nav>
                   </div>
 
@@ -69,13 +69,14 @@ export default function HeaderOne() {
                     </a>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      <Sidebar open={open} setOpen={setOpen} />
+      <Sidebar open={open} setOpen={setOpen} nav={dict.nav} />
     </>
   )
 }
