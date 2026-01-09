@@ -963,28 +963,7 @@ html {
 * ----------------------------------------------------------------------------------------
 * 03.MENU CSS STYLE
 * ----------------------------------------------------------------------------------------
-*/.language-switch:hover {
-  border-color: #007bff;
-  background: #f8f9fa;
-}
-
-.language-switch span {
-  transition: all 0.3s ease;
-}
-
-.language-switch span:not(.separator) {
-  filter: grayscale(100%) opacity(0.4);
-}
-
-.language-switch span.active {
-  filter: none;
-}
-
-.language-switch .separator {
-  font-size: 14px;
-  color: #999;
-  filter: none;
-}
+*/
 .nav-box {
   padding: 0 6.5rem;
 }
