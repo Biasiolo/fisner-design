@@ -2,7 +2,7 @@
 import MobileMenu from '@/layouts/headers/MobileMenu'
 import React from 'react'
 
-export default function Sidebar({ open, setOpen }: any) {
+export default function Sidebar({ open, setOpen, dict }: any) {
   return (
     <>
       <div className={`sidebar__area ${open ? 'sidebar-opened' : ''}`}>
@@ -14,7 +14,7 @@ export default function Sidebar({ open, setOpen }: any) {
           </div>
           <div className="sidebar__content mt-50 mb-20">
             <div className="mobile-menu fix mean-container">
-              <MobileMenu />
+              <MobileMenu nav={dict.nav}/>
             </div>
           </div>
         </div>
