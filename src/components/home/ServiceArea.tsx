@@ -43,8 +43,8 @@ export default function ServiceArea({ dict }: ServiceAreaProps) {
       <div className="container">
 
         {/* TÍTULO */}
-        <div className="row">
-          <div className="col-xl-12 col-lg-12">
+        <div className="row ">
+          <div className="col-xl-12 col-lg-12 ">
             <div className="section-title section-black-title wow fadeInUp delay-0-2s">
               <h2>{dict.title}</h2>
             </div>

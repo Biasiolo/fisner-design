@@ -9,7 +9,7 @@ const pt = {
   },
   hero: {
     description:
-      'Criações que traduzem propósito, personalidade e estratégia, desenvolvendo marcas, campanhas e projetos com estética, coerência e significado.',
+      'Mais do que enfeite, o design precisa fazer sentido. Eu ajudo marcas a se posicionarem de verdade. Vamos trabalhar juntos',
     cta: 'Entre em contato',
   },
   brand: {
@@ -18,8 +18,8 @@ const pt = {
   about: {
     preTitle: 'Sobre',
     paragraphs: [
-      'Oi, sou Gustavo Fisner, designer com mais de 5 anos de experiência atuando na criação de identidades visuais, projetos de branding e soluções gráficas estratégicas. Desenvolvo marcas que traduzem propósito, personalidade e posicionamento de forma consistente e memorável.',
-      'Meu trabalho é baseado em estética, coerência e significado, sempre alinhando criatividade e estratégia para gerar valor real para negócios e pessoas.',
+      'Olá, sou Gustavo Fisner, designer com mais de 5 anos de experiência atuando em diferentes áreas do design, desenvolvendo soluções visuais e criativas com foco em clareza, estratégia e impacto.',
+      'Meu trabalho combina estética e funcionalidade, aplicando criatividade de forma consciente para gerar valor real para empresas, produtos e pessoas, independente do desafio.',
     ],
     counters: {
       experience: 'Anos de Experiência',
@@ -33,28 +33,28 @@ const pt = {
     'Olá Gustavo! Tenho interesse no serviço de {{service}} e gostaria de conversar melhor.',
   items: {
     branding: {
-      title: 'Branding & Posicionamento',
+      title: 'IDENTIDADE VISUAL',
       description:
-        'Criação e desenvolvimento de marcas estratégicas, alinhando propósito, personalidade e posicionamento para construir identidades fortes, coerentes e memoráveis.',
-      cta: 'Falar no WhatsApp →',
+        'Desenvolvimento de sistemas visuais completos, incluindo logotipo, tipografia, cores e aplicações. Tudo pensado para garantir consistência, reconhecimento e coerência em todos os pontos de contato da marca.',
+      cta: 'Começe seu projeto →',
     },
     visualIdentity: {
-      title: 'Identidade Visual',
+      title: 'REBRANDING',
       description:
-        'Sistemas visuais, incluindo logotipo, tipografia, cores e aplicações, com consistência em pontos de contato da marca.',
-      cta: 'Solicitar orçamento →',
+        'Reposicionamento de marcas, ajustando abordagem, linguagem visual e mensagem para acompanhar sua evolução, objetivos ou mudanças de mercado, sem perder sua essência.',
+      cta: 'Entenda melhor →',
     },
     socialMedia: {
-      title: 'Artes para Postagens',
+      title: 'ARTES PARA REDES SOCIAIS',
       description:
-        'Criação de artes estratégicas para redes sociais, focadas em comunicação visual clara e alinhamento com a marca.',
-      cta: 'Conversar sobre o projeto →',
+        'Criação de peças estratégicas, com foco em comunicação clara, impacto visual e alinhamento com a identidade da marca, fortalecendo presença e posicionamento no âmbito digital.',
+      cta: 'Converse comigo →',
     },
     banners: {
-      title: 'Banners & Materiais Gráficos',
+      title: 'BANNERS & MATERIAIS GRÁFICOS',
       description:
-        'Desenvolvimento de banners e materiais gráficos digitais ou impressos, com impacto visual e estratégia.',
-      cta: 'Pedir proposta →',
+        'Desenvolvimento de banners e materiais gráficos para meios digitais ou impressos, unindo estética, função e legibilidade para comunicar mensagens de forma eficiente.',
+      cta: 'Descubra mais →',
     },
   },
 },
@@ -87,32 +87,32 @@ skills: {
   items: [
     {
       text:
-        'Desenvolvimento de identidades visuais sólidas, alinhando estética, posicionamento e propósito de marca.',
-      title: 'Design Gráfico',
+        'Aplicações criativas em diferentes formatos e plataformas, com foco em versatilidade, clareza e consistência visual.',
+      title: 'DESIGN VISUAL',
       subtitle: 'Estratégia • Conceito • Consistência',
     },
     {
       text:
         'Peças e layouts estratégicos voltados para engajamento, posicionamento de marca e aumento de conversão.',
-      title: 'Marketing Design',
+      title: 'VISÃO DE MARKETING',
       subtitle: 'Conversão • Performance • Comunicação Visual',
     },
     {
       text:
-        'Direção criativa aplicada a campanhas, projetos digitais e materiais gráficos com narrativa visual consistente.',
-      title: 'Direção Criativa',
+        'Direção criativa aplicada a campanhas, projetos digitais e materiais gráficos com narrativa visual coerente.',
+      title: 'DIREÇÃO CRIATIVA',
       subtitle: 'Conceito • Estética • Comunicação',
     },
     {
       text:
-        'Capacidade de comunicação clara com clientes e equipes, traduzindo ideias e objetivos em soluções visuais eficazes.',
-      title: 'Comunicação & Colaboração',
+        'Capacidade de transformar ideias, objetivos e contextos em soluções visuais coerentes e bem definidas.',
+      title: 'CONCEITO & PENSAMENTO DE MARCA',
       subtitle: 'Briefing • Feedback • Trabalho em Equipe',
     },
     {
       text:
-        'Ecossistema completo para criação gráfica, edição, motion e materiais visuais de alta qualidade.',
-      title: 'Adobe Creative Cloud',
+        'Ecossistema Adobe Creative Cloud para criação gráfica, edição e materiais visuais de alta qualidade.',
+      title: 'FERRAMENTAS & WORKFLOW',
       subtitle: 'Photoshop • Illustrator • After Effects',
     },
   ],

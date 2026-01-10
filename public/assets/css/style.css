@@ -1838,6 +1838,7 @@ h2.about-pre-title {
   font-weight: 600;
   color: #aab72a;
   transition: transform 0.2s ease, opacity 0.2s ease;
+  margin-bottom: 0;
 }
 
 .service-item:hover .service-cta {

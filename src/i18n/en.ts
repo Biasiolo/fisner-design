@@ -9,17 +9,17 @@ const en = {
   },
   hero: {
     description:
-      'Creations that translate purpose, personality, and strategy — developing brands, campaigns, and projects with aesthetics, consistency, and meaning.',
+      'More than decoration, design needs to make sense. I help brands position themselves with purpose. Let’s work together!',
     cta: 'Get in touch',
   },
   brand: {
-    title: 'Brands that trust',
+    title: 'Brands that believe my work',
   },
   about: {
     preTitle: 'About',
     paragraphs: [
-      'Hi, I’m Gustavo Fisner, a designer with over 5 years of experience working on visual identities, branding projects, and strategic graphic solutions. I develop brands that translate purpose, personality, and positioning in a consistent and memorable way.',
-      'My work is based on aesthetics, coherence, and meaning, always aligning creativity and strategy to generate real value for businesses and people.',
+      'Hi, I’m Gustavo Fisner, a designer with over 5 years of experience working across different areas of design, delivering visual and creative solutions focused on clarity, strategy, and impact.',
+      'My work blends aesthetics with functionality, applying creativity with intention to build real value for businesses, products, and people across a wide range of challenges.',
     ],
     counters: {
       experience: 'Years of Experience',
@@ -33,28 +33,28 @@ const en = {
     'Hi Gustavo! I am interested in the {{service}} service and would like to talk about it.',
   items: {
     branding: {
-      title: 'Branding & Positioning',
+      title: 'BRAND IDENTITY',
       description:
-        'Creation and development of strategic brands, aligning purpose, personality, and positioning to build strong, consistent, and memorable identities.',
-      cta: 'Talk on WhatsApp →',
+        'Development of complete visual systems, with logo, typography, color palettes, and applications. Everything is designed to ensure consistency, recognition, and coherence across all touchpoints.',
+      cta: 'Get your project started →',
     },
     visualIdentity: {
-      title: 'Visual Identity',
+      title: 'REBRANDING',
       description:
-        'Visual systems including logo, typography, colors, and applications, ensuring consistency across brand touchpoints.',
-      cta: 'Request a quote →',
+        'Strategies for brand repositioning, refining approach, visual language, and messaging to support growth, new goals, or market changes, without losing your brand’s essence.',
+      cta: 'See details →',
     },
     socialMedia: {
-      title: 'Social Media Designs',
+      title: 'SOCIAL MEDIA DESIGN',
       description:
-        'Creation of strategic designs for social media, focused on clear visual communication and brand alignment.',
-      cta: 'Discuss the project →',
+        'Strategic visual assets focused on clear communication, visual impact, and alignment with the brand identity, strengthening digital presence and positioning.',
+      cta: 'Let’s talk about it →',
     },
     banners: {
-      title: 'Banners & Graphic Materials',
+      title: 'BANNERS & GRAPHIC MATERIALS',
       description:
-        'Development of digital or printed banners and graphic materials with visual impact and strategy.',
-      cta: 'Request a proposal →',
+        'Design of banners and various graphic materials for digital or print media, combining aesthetics, functionality, and legibility to communicate messages effectively.',
+      cta: 'Discover more →',
     },
   },
 },
@@ -87,32 +87,33 @@ skills: {
   items: [
     {
       text:
-        'Development of solid visual identities, aligning aesthetics, brand positioning, and purpose.',
-      title: 'Graphic Design',
-      subtitle: 'Strategy • Concept • Consistency',
+        'Definition of visual language, aesthetic decisions, and consistency across projects.',
+      title: 'CREATIVE DIRECTION',
+      subtitle: 'Briefing • Feedback • Teamwork',
     },
+    
     {
       text:
-        'Layouts and visual pieces focused on engagement, brand positioning, and conversion growth.',
-      title: 'Marketing Design',
+        'Ability to translate ideas, goals, and contexts into clear and well-defined visual solutions.',
+      title: 'CONCEPT & BRAND THINKING',
       subtitle: 'Conversion • Performance • Visual Communication',
     },
     {
       text:
-        'Creative direction applied to campaigns, digital projects, and graphic materials.',
-      title: 'Creative Direction',
+        'Visual assets designed for digital engagement and conversion.',
+      title: 'MARKETING VISION',
       subtitle: 'Concept • Aesthetics • Communication',
     },
     {
       text:
-        'Clear communication skills with clients and teams, translating ideas and goals into effective visual solutions.',
-      title: 'Communication & Collaboration',
-      subtitle: 'Briefing • Feedback • Teamwork',
+        'Creative applications across different formats and platforms, focused on versatility, clarity, and visual consistency.',
+      title: 'VISUAL DESIGN',
+      subtitle: 'Strategy • Concept • Consistency',
     },
     {
       text:
-        'Complete ecosystem for graphic creation, editing, motion, and high-quality visual materials.',
-      title: 'Adobe Creative Cloud',
+        'Complete ecosystem Adobe Creative Cloud for graphic creation, editing, motion, and high-quality visual materials.',
+      title: 'TOOLS & WORKFLOW',
       subtitle: 'Photoshop • Illustrator • After Effects',
     },
   ],
