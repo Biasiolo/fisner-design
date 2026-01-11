@@ -44,7 +44,7 @@ export default function HeroArea({ dict }: HeroAreaProps) {
       <div className="hero-overlay"></div>
 
       {/* CONTEÚDO */}
-      <div className="justify-content-center h-100 align-items-center hero-content-wrapper">
+      <div className="justify-content-center h-100 align-items-center hero-content-wrapper ">
         <div className="row justify-content-center align-items-center h-100 ">
 
           {/* TEXTO */}
@@ -70,7 +70,7 @@ export default function HeroArea({ dict }: HeroAreaProps) {
               </div>
 
               <div className="hero-box d-flex justify-content-center">
-                <p className="hero-description text-center py-2 my-3">
+                <p className="hero-description text-center  my-4">
                   {dict.description}
                 </p>
               </div>

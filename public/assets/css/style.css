@@ -225,15 +225,17 @@ mark {
 .hero-content-wrapper {
     position: relative;
     z-index: 3;
+    margin-top: 10vh;
 }
 
 .main-hero-area.hero-fisner {
     background-color: #17151c;
-    min-height: 88vh;
-    display: flex;
+    min-height: 70vh;
     align-items: end;
-
-
+    padding: 0;
+    
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 
@@ -246,13 +248,12 @@ mark {
     width: 100%;
     overflow: visible;
     margin: 0 auto;
-    padding-left: 120px;
-    padding-right: 20px;
+
 
 }
 
 @media (max-width: 576px) {
-  .main-hero-area.hero-fisner .hero-image {
+  .main-hero-area.hero-fisner {
     padding-left: 0;
     padding-right: 0;
   }
