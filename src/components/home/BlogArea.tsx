@@ -6,53 +6,42 @@ const ITEMS_PER_PAGE = 3
 
 const projects = [
   {
-    title: 'Plástica Segura – Identidade Visual',
-    pdf: '/pdf/plastica-segura.pdf',
+    title: 'Club Essenza Wine & Co.',
+    pdf: '/pdf/CLUB.ESSENZA-CAMPANHA DE LANÇAMENTO.pdf',
     image: '/assets/images/final/pro1.png',
+    alt: 'Club Essenza Wine & Co.',
+  },
+  {
+    title: 'Traluz Energia Solar',
+    pdf: '/pdf/TRALUZ-MANUAL DA MARCA.pdf',
+    image: '/assets/images/final/pro2.png',
+    alt: 'Traluz Energia Solarz',
+  },
+  {
+    title: 'Yamada Odontologia',
+    pdf: '/pdf/YAMADA ODONTOLOGIA-CAMPANHA MÊS DAS MÃES.pdf',
+    image: '/assets/images/final/pro3.png',
+    alt: 'Yamada Odontologia',
+  },
+  {
+    title: 'Navah Assessoria & Negócios',
+    pdf: '/pdf/NAVAH-MANUAL DA MARCA.pdf',
+    image: '/assets/images/final/pro4.png',
+    alt: 'Navah Assessoria & Negócios',
+  },
+  {
+    title: 'Plástica Segura',
+    pdf: '/pdf/PLASTICA-SEGURA-MANUAL DA MARCA.pdf',
+    image: '/assets/images/final/pro5.png',
     alt: 'Plástica Segura',
   },
   {
-    title: 'Navah Assessoria & Negócios – Branding',
-    pdf: '/pdf/navah.pdf',
-    image: '/assets/images/final/pro2.png',
-    alt: 'Navah Assessoria',
-  },
-  {
-    title: 'Vertta Odontologia – Brandbook',
-    pdf: '/pdf/vertta.pdf',
-    image: '/assets/images/final/pro3.png',
+    title: 'Vertta Odontologia',
+    pdf: '/pdf/VERTTA-ODONTOLOGIA-MANUAL DA MARCA.pdf',
+    image: '/assets/images/final/pro6.png',
     alt: 'Vertta Odontologia',
   },
-  {
-    title: 'Vertta Odontologia – Brandbook',
-    pdf: '/pdf/vertta.pdf',
-    image: '/assets/images/final/pro3.png',
-    alt: 'Vertta Odontologia',
-  },
-  {
-    title: 'Vertta Odontologia – Brandbook',
-    pdf: '/pdf/vertta.pdf',
-    image: '/assets/images/final/pro3.png',
-    alt: 'Vertta Odontologia',
-  },
-  {
-    title: 'Vertta Odontologia – Brandbook',
-    pdf: '/pdf/vertta.pdf',
-    image: '/assets/images/final/pro3.png',
-    alt: 'Vertta Odontologia',
-  },
-  {
-    title: 'Vertta Odontologia – Brandbook',
-    pdf: '/pdf/vertta.pdf',
-    image: '/assets/images/final/pro3.png',
-    alt: 'Vertta Odontologia',
-  },
-  {
-    title: 'Vertta Odontologia – Brandbook',
-    pdf: '/pdf/vertta.pdf',
-    image: '/assets/images/final/pro3.png',
-    alt: 'Vertta Odontologia',
-  },
+
 ]
 
 interface BlogAreaProps {
@@ -73,24 +62,26 @@ export default function BlogArea({ dict }: BlogAreaProps) {
   const totalPages = Math.ceil(projects.length / ITEMS_PER_PAGE)
 
   const handlePageChange = (newPage: number) => {
-    setPage(newPage)
+  if (newPage < 0 || newPage >= totalPages) return
 
-    setTimeout(() => {
-      const section = document.getElementById('projetos')
-      if (section) {
-        const yOffset = -80
-        const y =
-          section.getBoundingClientRect().top +
-          window.pageYOffset +
-          yOffset
+  setPage(newPage)
 
-        window.scrollTo({
-          top: y,
-          behavior: 'smooth',
-        })
-      }
-    }, 50)
-  }
+  setTimeout(() => {
+    const section = document.getElementById('projetos')
+    if (section) {
+      const yOffset = -80
+      const y =
+        section.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset
+
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth',
+      })
+    }
+  }, 50)
+}
 
   return (
     <section id="projetos" className="blog-area">
@@ -147,7 +138,7 @@ export default function BlogArea({ dict }: BlogAreaProps) {
           <div className="col-lg-12 text-center d-flex justify-content-center gap-3">
 
             <button
-              className="theme-btn theme-btn-two"
+              className="theme-btn theme-btn-two w-100"
               disabled={page === 0}
               onClick={() => handlePageChange(page - 1)}
             >
@@ -155,7 +146,7 @@ export default function BlogArea({ dict }: BlogAreaProps) {
             </button>
 
             <button
-              className="theme-btn theme-btn-two"
+              className="theme-btn theme-btn-two w-100"
               disabled={page + 1 >= totalPages}
               onClick={() => handlePageChange(page + 1)}
             >

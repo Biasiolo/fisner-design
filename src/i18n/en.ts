@@ -61,15 +61,15 @@ const en = {
 portfolio: {
   items: [
     {
+      title: 'Elgin  Developers Comunity',
+      category: 'Branding',
+    },
+    {
       title: 'Club Essenza Wine & Co.',
       category: 'Branding',
     },
     {
-      title: 'Navah Consulting & Business',
-      category: 'Branding',
-    },
-    {
-      title: 'Traluz - Solar Energy',
+      title: 'Yamada Odontologia',
       category: 'Visual Identity',
     },
     {

@@ -6,8 +6,8 @@ import ImagePopup from '@/modals/ImagePopup'
 import portfolio_img_1 from "@/assets/images/final/dtk1.png"
 import portfolio_img_2 from "@/assets/images/final/dtk2.png"
 import portfolio_img_3 from "@/assets/images/final/dtk3.png"
-import portfolio_img_4 from "@/assets/images/final/dtk4.png"
-import portfolio_img_5 from "@/assets/images/final/dtk5.png"
+import portfolio_img_4 from "@/assets/images/final/dtk5.png"
+import portfolio_img_5 from "@/assets/images/final/dtk4.png"
 
 interface PortfolioItem {
   title: string

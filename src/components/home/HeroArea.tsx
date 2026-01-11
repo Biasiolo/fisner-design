@@ -26,7 +26,7 @@ export default function HeroArea({ dict }: HeroAreaProps) {
   }, [])
 
   return (
-    <section id="home" className="main-hero-area hero-fisner">
+    <section id="home" className="main-hero-area hero-fisner h-100">
 
       {/* 🎥 VIDEO BACKGROUND */}
       <video
@@ -44,11 +44,11 @@ export default function HeroArea({ dict }: HeroAreaProps) {
       <div className="hero-overlay"></div>
 
       {/* CONTEÚDO */}
-      <div className="justify-content-between align-items-center hero-content-wrapper">
-        <div className="row mt-4 align-items-end">
+      <div className="justify-content-center h-100 align-items-center hero-content-wrapper">
+        <div className="row justify-content-center align-items-center h-100 ">
 
           {/* TEXTO */}
-          <div className="col-lg-6 order-1 order-lg-2 pb-4">
+          <div className="col-lg-5 order-1 order-lg-2 pb-4">
             <div
               className="
                 hero-content mb-4 wow fadeInDown delay-0-2s
@@ -87,7 +87,7 @@ export default function HeroArea({ dict }: HeroAreaProps) {
           </div>
 
           {/* FOTO */}
-          <div className="foto-box col-lg-6 order-2 order-lg-1">
+          <div className="foto-box col-lg-7 order-2 order-lg-1">
             <div className="hero-image wow fadeInUp delay-0-2s">
               <img
                 src="/assets/images/final/hero1.png"
