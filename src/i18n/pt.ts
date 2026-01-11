@@ -9,8 +9,8 @@ const pt = {
   },
   hero: {
     description:
-      'Mais do que enfeite, o design precisa fazer sentido. Eu ajudo marcas a se posicionarem de verdade. Vamos trabalhar juntos',
-    cta: 'Entre em contato',
+      'Mais do que enfeite, o design precisa fazer sentido. Eu ajudo marcas a se posicionarem de verdade.',
+    cta: 'Vamos trabalhar juntos',
   },
   brand: {
     title: 'Marcas que confiam',

@@ -9,8 +9,8 @@ const en = {
   },
   hero: {
     description:
-      'More than decoration, design needs to make sense. I help brands position themselves with purpose. Let’s work together!',
-    cta: 'Get in touch',
+      'More than decoration, design needs to make sense. I help brands position themselves with purpose.',
+    cta: 'Let’s work together',
   },
   brand: {
     title: 'Brands that believe my work',
