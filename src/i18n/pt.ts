@@ -126,6 +126,7 @@ projects: {
 },
 contact: {
   title: 'Contato',
+ download: 'Baixar Currículo',
 
   locationTitle: 'Localização',
   locationValue: 'São José dos Campos – SP',

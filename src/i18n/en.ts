@@ -127,6 +127,7 @@ projects: {
 },
 contact: {
   title: 'Contact',
+  download: 'Download Resume',
 
   locationTitle: 'Location',
   locationValue: 'São José dos Campos – SP',

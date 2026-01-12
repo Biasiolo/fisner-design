@@ -581,8 +581,8 @@ html {
     color: var(--white-color);
     cursor: pointer;
     display: inline-block;
-    border: 1px solid var(--button-border);
-    font-size: 14px;
+    border: 2px solid var(--black-color);
+    font-size: 1rem;
     font-weight: 500;
     line-height: 20px;
     margin: 0 5px 10px 0;
@@ -592,7 +592,9 @@ html {
     text-align: center;
     text-transform: none;
     -webkit-transition: .3s;
-    transition: .3s
+    transition: .3s;
+
+    
 }
 .theme-btn:disabled {
   opacity: 0.4;
@@ -617,7 +619,7 @@ html {
 }
 
 .theme-btn:hover {
-    border: 1px solid var(--button-border);
+    border: 2px solid var(--black-color);
     text-decoration: none;
     color: var(--main-color);
     -webkit-transition: .3s;
