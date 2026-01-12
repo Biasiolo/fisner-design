@@ -9,7 +9,7 @@ interface ContactAreaProps {
 export default function ContactArea({ dict }: ContactAreaProps) {
   const pathname = usePathname()
   const currentLang = pathname.startsWith('/en') ? 'en' : 'pt'
-  const resumeUrl = `/pdf/cv-${currentLang}.pdf`
+  const resumeUrl = `/pdf/cv-gustavo-fisner-${currentLang}.pdf`
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
